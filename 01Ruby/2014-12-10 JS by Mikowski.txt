@@ -1,0 +1,47 @@
+# Archiecture: write in modular fashion
+  browser specific stuff, model specific stuff, and server specific stuff
+
+# Conventions
+  pick datatype and name. Use indicator. Don't make variable plural
+
+easy to create global variables
+however, if you scope to function, you won't make a global variable
+also can type //use strict to make strict mode on functional scope. Don't want to do this on global scale
+
+can do declaration and assignment on the same line.
+try to only have one var declaration per function, put assignment on separate line
+
+# hoisting
+  will hoist declaration of variable, will pull all the way to the top
+  so declare all variables at once
+
+# scope chain: symbol defined in nested function is available globally and will overwrite outer-most definition of the variable
+
+# Not class-based object, uses prototype-based object.
+
+ key value stores
+    _proto_ : chain refers to the type of prototype an object is in
+    don't need to activate or create new object from class.
+    hasOwnProperty available on object, lets you know what is set on the innermost, closest to you object class/prototype
+
+  use object create, not prototype.new
+
+# Execution context object: Javascript creates object that cannot be touched everytime you execute a command
+  2 passes-- 1) goes through and hoists declarations to the top
+  2) runs the code
+  if there is function within a function, will fill the innermost function first
+  when reference count to variable is down to 0, then will be garbage collected.
+
+# Closures can cause memory leaks
+don't declar function in a loop to prevent memory leaks
+
+#garbage collecting: will reallocate memory-- when too much memory allocated, will reallocate to smaller space
+
+#self-executing anonymouse function: function declaration will execute function immediately using functions:
+(function ($) { //can also use use_strict code here
+  var warningMsg
+} )
+
+# Can create modules to make scope of variable within function
+
+typically put within function and name it so that it will have namespace. This way, only use one variable for that function
