@@ -1,5 +1,5 @@
 require 'rspec'
-require 'assessment01-try3'
+require 'assessment01-try2'
 
 describe "#primes" do
   # `primes(num)` returns an array of the first `num` primes
