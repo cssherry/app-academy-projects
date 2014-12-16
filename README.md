@@ -46,3 +46,4 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W1D4_Pash]: ./01Ruby/W1D4_Pash
 [01Ruby/W1D5_Ashoka]: ./01Ruby/W1D5_Ashoka
 [01Ruby/W2D1_Phoebe]: ./01Ruby/W2D1_Phoebe
+[01Ruby/recursion_exercises-master]: ./01Ruby/recursion_exercises-master
