@@ -31,7 +31,7 @@ This repository contains a list of projects completed for App Academy.
 
 ### [Additional Recursion exercises][01Ruby/recursion_exercises-master]
 
-### [Practice Assessment][01Ruby/W1 a01-practice]
+### [Practice Assessment][01Ruby/W1_a01-practice]
 
 ## Week 2
 
@@ -47,4 +47,4 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W1D5_Ashoka]: ./01Ruby/W1D5_Ashoka
 [01Ruby/W2D1_Phoebe]: ./01Ruby/W2D1_Phoebe
 [01Ruby/recursion_exercises-master]: ./01Ruby/recursion_exercises-master
-[01Ruby/W1 a01-practice]: ./01Ruby/W1 a01-practice
+[01Ruby/W1_a01-practice]: ./01Ruby/W1_a01-practice
