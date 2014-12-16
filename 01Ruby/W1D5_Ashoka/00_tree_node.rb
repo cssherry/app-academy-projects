@@ -24,7 +24,6 @@ class PolyTreeNode
 
   def add_child(child)
     child.parent = self
-
     self.children << child unless self.children.include?(child)
   end
 
