@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Phoebe](https://github.com/phoebejhhong)
+This was completed with [Phoebe](https://github.com/phoebejhhong). See my related blog post [here](http://cssherry.tumblr.com/post/105323606704/w2d1-serialization-gems-rbenv). 
 
 ## Week 2
 ### w2d1

@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Ashoka](https://github.com/thissaysnothing)
+This was completed with [Ashoka](https://github.com/thissaysnothing). See my related blog post [here](http://cssherry.tumblr.com/post/105257784659/w1d5-data-structures).
 
 ## Week 1
 ### w1d5

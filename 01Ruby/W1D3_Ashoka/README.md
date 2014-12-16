@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Ashoka](https://github.com/thissaysnothing)
+This was completed with [Ashoka](https://github.com/thissaysnothing). See my related blog post [here](http://cssherry.tumblr.com/post/104913334454/w1d3-refactoring-scope-and-hash-defaults). 
 
 ## Week 1
 ### [w1d3][W1D3_Ashoka]

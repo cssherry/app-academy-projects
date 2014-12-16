@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Pash](https://github.com/pashdevore)
+This was completed with [Pash](https://github.com/pashdevore). See my related blog post [here](http://cssherry.tumblr.com/post/104996768309/w1d4-blocks-and-recursions). 
 
 ## Week 1
 ### w1d4
