@@ -3,7 +3,7 @@
 This repository contains a list of projects completed for App Academy.
 
 ## Week 1
-### [w1d1][./01Ruby/W1D1_Luke]
+### [w1d1][01Ruby/W1D1_Luke]
 * Primitive Ruby types (common methods)
 * Debugging
 * Running/loading Ruby code
@@ -30,3 +30,11 @@ This repository contains a list of projects completed for App Academy.
 ### [w2d1][01Ruby/W2D1_Phoebe]
 * Serialization (JSON and YAML)
 * Gems and rbenv
+
+
+[01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
+[01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
+[01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka
+[01Ruby/W1D4_Pash]: ./01Ruby/W1D4_Pash
+[01Ruby/W1D5_Ashoka]: ./01Ruby/W1D5_Ashoka
+[01Ruby/W2D1_Phoebe]: ./01Ruby/W2D1_Phoebe
