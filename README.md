@@ -3,7 +3,7 @@
 This repository contains a list of projects completed for App Academy.
 
 ## Week 1
-### [w1d1][01Ruby/W1D1_Luke]
+### [w1d1][./01Ruby/W1D1_Luke]
 * Primitive Ruby types (common methods)
 * Debugging
 * Running/loading Ruby code
