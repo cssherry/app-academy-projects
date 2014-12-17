@@ -38,6 +38,7 @@ This repository contains a list of projects completed for App Academy.
 ### [w2d1][01Ruby/W2D1_Phoebe]
 * Serialization (JSON and YAML)
 * Gems and rbenv
+
 ### [w2d2 and W2D3][01Ruby/w2d2_Varun]
 * Class inheritance
 * Exceptions, error handling
