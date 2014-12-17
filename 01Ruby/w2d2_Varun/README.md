@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Varun](https://github.com/varunprabhakar14). See my related blog post [here]().
+This was completed with [Varun](https://github.com/varunprabhakar14). See my related blog post [here](http://cssherry.tumblr.com/post/105412733689/w2d2-class-inheritance-and-the-tale-of-iteration).
 
 ## Week 2
 ### w2d2 and W2D3
