@@ -5,8 +5,9 @@ class SlidingPieces < Piece
 
   def moves(direction_array)
     results = []
-    directions_array.each do |direction|
+    direction_array.each do |direction|
       x, y = position[0] + direction[0], position[1] + direction[1]
+      pos = [x, y]
       while within_grid?([x, y])
         break if team_piece?(pos)
         results << [x, y]

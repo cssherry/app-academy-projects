@@ -1,5 +1,6 @@
 class Piece
   attr_accessor :position, :board, :color
+  attr_reader :code
 
   ROOK_STEP = [[1,0], [-1,0],[0,1], [0,-1]]
   BISHOP_STEP = [[1,1],[1,-1],[-1,1],[-1,-1]]
@@ -9,6 +10,11 @@ class Piece
     @position = position
     @board = board
     @color = color
+    @code = nil
+  end
+
+  def inspect
+    {code: @code, position: @position}
   end
 
   def within_grid?(pos)
@@ -23,7 +29,7 @@ class Piece
   end
 
   def team_piece?(pos)
-    !board[pos].nil? && board[pos].color == color
+    !@board[pos].nil? && @board[pos].color == @color
     # p @board[pos]
     # p @color
     # if @board[pos] != nil

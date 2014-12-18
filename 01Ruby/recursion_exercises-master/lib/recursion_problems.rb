@@ -27,9 +27,7 @@ def num_occur(array, target)
   new_array = array.dup
   return 0 if new_array.empty?
   matches = 0
-  if new_array.pop == target
-    matches = 1
-  end
+  matches = 1 if new_array.pop == target
   matches + num_occur(new_array, target)
 end
 
@@ -59,6 +57,14 @@ def sorted?(array)
   false
 end
 
+# Shorter solution, you throw up a false at the first false
+# def sorted?(array)
+#   return [] if array.empty?
+#   return true if array.length == 1
+#   return false if array[0] > array[1]
+#   sorted?(array.drop(1))
+# end
+
 
 #Problem 6: Write the code to give the value of a number after it is
 #reversed. Must use recursion. (Don't use any #reverse methods!)
@@ -70,3 +76,9 @@ def reverse(number)
   rest_number = number_string[1..-1]
   ("#{reverse(rest_number.to_i)}#{first}").to_i
 end
+
+# If you cheat and give it a default value:
+# def reverse(number)
+#   return number if number < 10
+#   "#{number % 10}#{reverse(number / 10)}".to_i
+# end
