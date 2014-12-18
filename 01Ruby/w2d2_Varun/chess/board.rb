@@ -67,7 +67,7 @@ class Board
     board[row][4] = King.new([row, 4], self, color)
   end
 
-  def [](value) # [](x, y) # board[[x, y]]
+  def [](value)
     x,y = value
     board[x][y]
   end
@@ -101,10 +101,9 @@ class Board
 
   # after moving, need to call all possible moves for each piece of the opposite color, then make the move on a dupe board, and do in check again.
   def checkmate?(piece_color)
-    current_team = flatten(piece_color)
-    # opponent_team = flatten(OPPOSITES[piece_color])
+    current_team = flatten(OPPOSITES[piece_color])
     current_team.all? do |piece|
-      piece.move_dirs.all? { |position| in_check?(piece.position, position, piece_color) }
+      piece.move_dirs.all? { |position| in_check?(piece.position, position, OPPOSITES[piece_color]) }
     end
   end
 
@@ -112,14 +111,9 @@ class Board
     board.flatten.compact.select{|piece| piece.color == piece_color}
   end
 
-  # temp[[6,0]], temp[[4,0]]
-
-
   def board_dup
     new_board = Board.new(false)
 
-    # board.each_with_index do |row, x|
-    #   row.each_with_index do |piece, y|
     8.times do |x|
       8.times do |y|
         piece = board[x][y]
@@ -136,7 +130,7 @@ class Board
   end
 
   def render
-    puts " 0 |1 |2 |3 |4 |5 |6 |7 "
+    puts " 0  1  2  3  4  5  6  7 "
     board.each_with_index do |row, i|
       row.each_with_index do |element, i2|
         if element.nil?

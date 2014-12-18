@@ -1,7 +1,7 @@
 --- !ruby/object:Game
 board: &1 !ruby/object:Board
   board:
-  - - 
+  - -
     - !ruby/object:Rook
       position:
       - 0
@@ -51,14 +51,14 @@ board: &1 !ruby/object:Board
       board: *1
       color: black
       code: "♖"
-  - - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+  - -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
   - - !ruby/object:Knight
       position:
       - 2
@@ -66,23 +66,23 @@ board: &1 !ruby/object:Board
       board: *1
       color: black
       code: "♘"
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-  - - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-  - - 
-    - 
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+  - -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+  - -
+    -
     - !ruby/object:Bishop
       position:
       - 4
@@ -90,16 +90,16 @@ board: &1 !ruby/object:Board
       board: *1
       color: white
       code: "♝"
-    - 
-    - 
-    - 
-    - 
-    - 
-  - - 
-    - 
-    - 
-    - 
-    - 
+    -
+    -
+    -
+    -
+    -
+  - -
+    -
+    -
+    -
+    -
     - !ruby/object:Queen
       position:
       - 5
@@ -107,16 +107,16 @@ board: &1 !ruby/object:Board
       board: *1
       color: white
       code: "♛"
-    - 
-    - 
-  - - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+    -
+    -
+  - -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
   - - !ruby/object:Rook
       position:
       - 7
@@ -138,7 +138,7 @@ board: &1 !ruby/object:Board
       board: *1
       color: white
       code: "♝"
-    - 
+    -
     - !ruby/object:King
       position:
       - 7
@@ -146,7 +146,7 @@ board: &1 !ruby/object:Board
       board: *1
       color: white
       code: "♚"
-    - 
+    -
     - !ruby/object:Knight
       position:
       - 7
@@ -162,8 +162,8 @@ board: &1 !ruby/object:Board
       color: white
       code: "♜"
 player1:
-  :name: N
+  :name: Sherry
   :color: white
 player2:
-  :name: N
+  :name: Sherry2
   :color: black

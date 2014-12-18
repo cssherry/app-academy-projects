@@ -20,7 +20,7 @@ class SlidingPieces < Piece
 
 end
 
-# @board = instance variable
+# @board is an instance variable
 # attr_reader
 ## allows us to call board (no @)
 # attr_writer

@@ -5,40 +5,41 @@ class GameSaved < ArgumentError
 end
 
 class Game
-  attr_accessor :board, :player1, :player2, :current_player
+  attr_accessor :board, :player1, :player2, :current_player, :players
 
   def initialize(player1, player2)
     @board = Board.new
-    @player1 = player1
-    @player2 = player2
-    @current_player = player1
+    @player1 = {player: player1, color: "white"}
+    @player2 = {player: player2, color: "black"}
+    @current_player = @player1
+    @players = {@player1 => @player2, @player2 => @player1}
   end
 
   def play
     game_over = false
     until game_over
-      @current_player = player1
       board.render
-      game_over = turn("white")
-      break unless game_over
-      @current_player = player2
-      board.render
-      game_over = turn("black")
+      game_over = turn(@current_player[:color])
       puts
+      break if game_over == true
+      @current_player = @players[current_player]
     end
     board.render
-    puts "CHECKMATE. #{player1} wins!"
+    puts "CHECKMATE. #{current_player[:player]} playing #{current_player[:color]} wins!"
   end
 
   def turn(color)
     begin
-      puts "Which position do you want to move from? Or 's' to save the game. "
+      puts "#{current_player[:player]}, you are #{current_player[:color]}. \nWhich position do you want to move from? \nEnter 's' to save the game. Enter 'e' to exit the game."
       start_position = gets.chomp
+      exit if start_position == "e"
       start_position == "s" ? save_game : start_position = parse_answer(start_position)
 
-      puts "Which position do you want to move to? Or 's' to save the game. "
+      puts "#{current_player[:player]}, which position do you want to move to?"
       end_position = gets.chomp
+      exit if end_position == "e"
       end_position == "s" ? save_game : end_position = parse_answer(end_position)
+
       board.move(start_position, end_position, color)
     rescue WrongStartPositionError => s
       puts "#{s}: Enter a correct start position"
@@ -47,7 +48,7 @@ class Game
       puts "#{e}: Enter a correct end position"
       retry
     rescue GameSaved => g
-      puts "#{e}: Game saved!"
+      puts "Game saved!"
       retry
     rescue InCheckError => c
       puts "#{c}: You are still in check"
@@ -58,10 +59,15 @@ class Game
   end
 
   def save_game
-    puts "Filename?"
-    filename = gets.chomp
-    File.open("saved_games/#{filename}.yml", "w") { |f| f.puts self.to_yaml }
-    raise GameSaved
+    begin
+      puts "Filename?"
+      filename = gets.chomp.downcase
+      File.open("01Ruby/w2d2_Varun/saved_games/#{filename}.yml", "w") { |f| f.puts self.to_yaml }
+      raise GameSaved
+    rescue Errno::ENOENT => s
+      puts "#{s}: Enter a legitimate filename"
+      retry
+    end
   end
 
 
@@ -77,8 +83,8 @@ load = gets.chomp.downcase
 if load == "l"
   begin
     puts "Filename?"
-    filename = gets.chomp
-    file = YAML::load_file("saved_games/#{filename}.yml")
+    filename = gets.chomp.downcase
+    file = YAML::load_file("01Ruby/w2d2_Varun/saved_games/#{filename}.yml")
     file.play
   rescue Errno::ENOENT => e
     puts "#{e}: Wrong File Name"

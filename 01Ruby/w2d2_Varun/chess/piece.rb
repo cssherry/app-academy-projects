@@ -30,26 +30,9 @@ class Piece
 
   def team_piece?(pos)
     !@board[pos].nil? && @board[pos].color == @color
-    # p @board[pos]
-    # p @color
-    # if @board[pos] != nil
-    #   if @board[pos].color != @color
-    #     false
-    #   else
-    #     true
-    #   end
-    # end
   end
 
   def opponent_piece?(pos)
     !@board[pos].nil? && @board[pos].color != @color
-  #   p @board[pos]
-  #   p @color
-  #   if @board[pos] != nil && @board[pos].color != @color
-  #     true
-  #   else
-  #     false
-  #   end
-  # end
   end
 end
