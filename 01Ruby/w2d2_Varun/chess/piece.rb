@@ -2,15 +2,12 @@ class Piece
   attr_accessor :position, :board, :color
   attr_reader :code
 
-  ROOK_STEP = [[1,0], [-1,0],[0,1], [0,-1]]
-  BISHOP_STEP = [[1,1],[1,-1],[-1,1],[-1,-1]]
-  KNIGHT_STEP = [[-2,1], [-2,-1], [2, 1], [2, -1], [1, -2], [1, 2], [-1, 2], [-1,-2]]
+  ROOK_STEP = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+  BISHOP_STEP = [[1, 1], [1, -1], [-1, 1], [-1, -1]]
+  KNIGHT_STEP = [[-2, 1], [-2, -1], [2, 1], [2, -1], [1, -2], [1, 2], [-1, 2], [-1,-2]]
 
   def initialize(position, board, color)
-    @position = position
-    @board = board
-    @color = color
-    @code = nil
+    @position, @board, @color, @code  = position, board, color, nil
   end
 
   def inspect

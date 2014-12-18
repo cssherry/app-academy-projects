@@ -1,5 +1,4 @@
 require_relative('pieces.rb')
-require 'byebug'
 require 'colorize'
 
 class WrongStartPositionError < ArgumentError

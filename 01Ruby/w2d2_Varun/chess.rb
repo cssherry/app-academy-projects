@@ -1,5 +1,6 @@
 require_relative('chess/board.rb')
 require 'yaml'
+require 'dispel'
 
 class GameSaved < ArgumentError
 end
