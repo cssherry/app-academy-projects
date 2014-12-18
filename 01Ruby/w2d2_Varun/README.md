@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Varun](https://github.com/varunprabhakar14). See my related blog post [here](http://cssherry.tumblr.com/post/105323606704/w2d1-serialization-gems-rbenv).
+This was completed with [Varun](https://github.com/varunprabhakar14). See my related blog post [here](http://cssherry.tumblr.com/post/105499834509/w2d3-chess-completed).
 
 ## Week 2
 ### [w2d2 and W2D3][01Ruby/w2d2_Varun]
