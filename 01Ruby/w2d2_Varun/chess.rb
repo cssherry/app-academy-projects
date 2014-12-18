@@ -9,10 +9,10 @@ class Game
 
   def initialize(player1, player2)
     @board = Board.new
-    @player1 = {player: player1, color: 'white'}
-    @player2 = {player: player2, color: 'black'}
+    @player1 = { player: player1, color: 'white' }
+    @player2 = { player: player2, color: 'black' }
     @current_player = @player1
-    @players = {@player1 => @player2, @player2 => @player1}
+    @players = { @player1 => @player2, @player2 => @player1 }
   end
 
   def play
