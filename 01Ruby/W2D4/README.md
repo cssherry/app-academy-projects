@@ -1,0 +1,19 @@
+# App Academy Projects
+====================
+This was completed with [Varun](https://github.com/varunprabhakar14). See my related blog post [here](http://cssherry.tumblr.com/post/105499834509/w2d3-chess-completed).
+
+## Week 2
+### W2D4
+* Checkers
+
+# How to Run These Files
+These files require Ruby to run. The best tutorial I've found is this: [Ruby Installation Tutorial](http://installrails.com/steps)
+
+Once Ruby is installed, download the files, go into terminal, and either run files individually
+
+$ ruby checkers.rb
+
+or run them through irb
+
+$ irb
+$ load 'checkers.rb'
