@@ -130,8 +130,9 @@ class Board
   end
 
   def render
-    puts " 0  1  2  3  4  5  6  7 "
+    puts "   a  b  c  d  e  f  g  h"
     board.each_with_index do |row, i|
+      print "#{8 - i} "
       row.each_with_index do |element, i2|
         if element.nil?
           if (i + i2) % 2 == 0
@@ -147,8 +148,9 @@ class Board
           end
         end
       end
-      puts " #{i}"
+      puts " #{8 - i}"
     end
+    puts "   a  b  c  d  e  f  g  h"
   end
 
   def join_rows(row, offset)
