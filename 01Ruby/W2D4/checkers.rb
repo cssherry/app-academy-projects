@@ -38,7 +38,8 @@ class Chess
         end_pos = moves_array.last
         if board[start_pos].color == current_player.values.first
           a = board[start_pos].perform_moves!(moves_array)
-          maybe_promote(end_pos) if a == true
+          byebug
+          maybe_promote(end_pos) unless a == false
           raise WrongEndPosition if a == false
         else
           raise WrongTeam
@@ -89,9 +90,9 @@ class Chess
   def maybe_promote(end_pos)
     x, y = end_pos
     if board[end_pos].color == 'black'
-      board[end_pos].king = true if y == (board.grid.length - 1)
+      board[end_pos].king = true if x == 0
     elsif board[end_pos].color == 'red'
-      board[end_pos].king = true if y == 0
+      board[end_pos].king = true if x == (board.grid.length - 1)
     end
   end
 
@@ -119,13 +120,19 @@ if game_state == 'l'
     retry
   end
 else
-  puts "What size board do you want? American checkers typically starts with 8 positions. "
-  size = gets.chomp.to_i
-  puts "What's player 1's name?"
-  player1 = gets.chomp.capitalize
-  puts "What's player 2's name?"
-  player2 = gets.chomp.capitalize
-  game = Chess.new(player1, player2, size)
-  puts "Note: This game requires you to capture if you have the option to capture. You can only capture in your direction until you become king. "
-  game.play
+  begin
+    puts "What size board do you want? American checkers typically starts with 8 positions. "
+    size = gets.chomp.to_i
+  raise ArgumentError.new if size < 5
+    puts "What's player 1's name?"
+    player1 = gets.chomp.capitalize
+    puts "What's player 2's name?"
+    player2 = gets.chomp.capitalize
+    game = Chess.new(player1, player2, size)
+    puts "Note: This game requires you to capture if you have the option to capture. You can only capture in your direction until you become king. "
+    game.play
+  rescue ArgumentError
+    puts "Enter a number over 5"
+    retry
+  end
 end

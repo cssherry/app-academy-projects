@@ -12,7 +12,7 @@ board: &1 !ruby/object:Board
       king: false
     - 
     - !ruby/object:Piece
-      color: black
+      color: red
       board: *1
       position:
       - 0
@@ -50,15 +50,15 @@ board: &1 !ruby/object:Board
       - 2
       king: false
     - 
-    - 
-    - 
     - !ruby/object:Piece
-      color: black
+      color: red
       board: *1
       position:
       - 1
-      - 6
+      - 4
       king: false
+    - 
+    - 
     - 
   - - 
     - !ruby/object:Piece
@@ -77,24 +77,32 @@ board: &1 !ruby/object:Board
       - 3
       king: false
     - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 2
+      - 5
+      king: false
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - 
     - 
     - 
     - !ruby/object:Piece
       color: red
       board: *1
       position:
-      - 2
-      - 7
+      - 3
+      - 6
       king: false
-  - - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
     - 
   - - 
+    - 
+    - 
     - 
     - 
     - !ruby/object:Piece
@@ -102,12 +110,16 @@ board: &1 !ruby/object:Board
       board: *1
       position:
       - 4
-      - 3
+      - 5
       king: false
     - 
-    - 
-    - 
-    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 4
+      - 7
+      king: false
   - - !ruby/object:Piece
       color: black
       board: *1
@@ -116,7 +128,13 @@ board: &1 !ruby/object:Board
       - 0
       king: false
     - 
-    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 5
+      - 2
+      king: false
     - 
     - 
     - 
@@ -131,7 +149,13 @@ board: &1 !ruby/object:Board
       - 1
       king: false
     - 
-    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 6
+      - 3
+      king: false
     - 
     - !ruby/object:Piece
       color: black
@@ -156,13 +180,7 @@ board: &1 !ruby/object:Board
       - 0
       king: false
     - 
-    - !ruby/object:Piece
-      color: black
-      board: *1
-      position:
-      - 7
-      - 2
-      king: false
+    - 
     - 
     - !ruby/object:Piece
       color: black
