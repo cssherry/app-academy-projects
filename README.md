@@ -39,13 +39,15 @@ This repository contains a list of projects completed for App Academy.
 * Serialization (JSON and YAML)
 * Gems and rbenv
 
-### [w2d2 and W2D3][01Ruby/w2d2_Varun]
+### [W2D2 and W2D3][01Ruby/w2d2_Varun]
 * Class inheritance
 * Exceptions, error handling
 * Decomposition into objects
 * Inheritance, Polymorphism and DRY
 * Information hiding/encapsulation
 
+### [W2D4][01Ruby/w2d4]
+* Chess solo project and debugging
 
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
@@ -55,4 +57,5 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W2D1_Phoebe]: ./01Ruby/W2D1_Phoebe
 [01Ruby/recursion_exercises-master]: ./01Ruby/recursion_exercises-master
 [01Ruby/W1_a01-practice]: ./01Ruby/W1_a01-practice
-[01Ruby/w2d2_Varun]: ./01Ruby/w2d2_Varun
+[01Ruby/w2d2_Varun]: ./01Ruby/W2D2_Varun
+[01Ruby/w2d4]: ./01Ruby/W2D4
