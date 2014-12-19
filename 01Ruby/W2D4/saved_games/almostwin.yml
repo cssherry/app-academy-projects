@@ -1,0 +1,187 @@
+--- !ruby/object:Chess
+board: &1 !ruby/object:Board
+  size: 8
+  grid:
+  - - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 0
+      - 1
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 0
+      - 3
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 0
+      - 5
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 0
+      - 7
+      king: false
+  - - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 1
+      - 0
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 1
+      - 2
+      king: false
+    - 
+    - 
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 1
+      - 6
+      king: false
+    - 
+  - - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 2
+      - 1
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 2
+      - 3
+      king: false
+    - 
+    - 
+    - 
+    - !ruby/object:Piece
+      color: red
+      board: *1
+      position:
+      - 2
+      - 7
+      king: false
+  - - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 4
+      - 3
+      king: false
+    - 
+    - 
+    - 
+    - 
+  - - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 5
+      - 0
+      king: false
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 6
+      - 1
+      king: false
+    - 
+    - 
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 6
+      - 5
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 6
+      - 7
+      king: false
+  - - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 7
+      - 0
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 7
+      - 2
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 7
+      - 4
+      king: false
+    - 
+    - !ruby/object:Piece
+      color: black
+      board: *1
+      position:
+      - 7
+      - 6
+      king: false
+    - 
+player2:
+  Aneesh: black
+player1: &2
+  Sherry: red
+current_player: *2
