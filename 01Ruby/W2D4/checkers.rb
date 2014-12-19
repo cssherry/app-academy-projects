@@ -38,7 +38,6 @@ class Chess
         end_pos = moves_array.last
         if board[start_pos].color == current_player.values.first
           a = board[start_pos].perform_moves!(moves_array)
-          byebug
           maybe_promote(end_pos) unless a == false
           raise WrongEndPosition if a == false
         else
