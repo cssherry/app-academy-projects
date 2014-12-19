@@ -113,7 +113,7 @@ class Piece
       direction = [dir[0] + dir[0], dir[1] + dir[1]]
       valid_moves = valid_moves.merge(abs_positions_from_array([direction], :perform_jump))
     end
-    valid_moves
+    valid_moves.select { |key, hash| board[key] == nil }
   end
 
   def capturable_piece?(direction) #rename to capturable piece

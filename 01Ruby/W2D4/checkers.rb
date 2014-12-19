@@ -87,6 +87,7 @@ class Chess
     board.grid.flatten.compact.select { |piece| piece.color == current_color}
   end
 
+
   def maybe_promote(end_pos)
     x, y = end_pos
     if board[end_pos].color == 'black'
@@ -129,7 +130,7 @@ else
     puts "What's player 2's name?"
     player2 = gets.chomp.capitalize
     game = Chess.new(player1, player2, size)
-    puts "Note: This game requires you to capture if you have the option to capture. You can only capture in your direction until you become king. "
+    puts "Note: This game requires you to capture if you have the option to capture. You don't have to capture multiple pieces. You can only capture in your direction until you become king. "
     game.play
   rescue ArgumentError
     puts "Enter a number over 5"
