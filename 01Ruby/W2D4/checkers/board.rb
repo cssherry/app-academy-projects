@@ -90,14 +90,16 @@ class Board
     true
   end
 
-  def within_board?(position)
-    x, y = position
+  def within_board?(pos)
+    x, y = pos
     if x >= 0 && x < size && y >= 0 && y < size
       true
     else
       false
     end
   end
+
+  #much shorter answer: pos.all? { |coord| coord.between?(0, 7) }
 
   # copies board
   def copy_board

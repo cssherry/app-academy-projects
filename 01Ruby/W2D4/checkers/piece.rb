@@ -100,6 +100,67 @@ class Piece
     @position = destination
   end
 
+
+  #Oh man, this is nice:
+  # def perform_slide(move_pos)
+  #   return false unless Board.valid_pos?(move_pos)
+  #   return false unless board.empty?(move_pos)
+  #
+  #   move_diff = [
+  #     move_pos[0] - self.pos[0],
+  #     move_pos[1] - self.pos[1]
+  #   ]
+  #
+  #   return false unless move_diffs.include?(move_diff)
+  #
+  #   board[pos] = nil
+  #   self.pos = move_pos
+  #   board[move_pos] = self
+  #
+  #   maybe_promote
+  #
+  #   true
+  # end
+  # def perform_moves!(move_positions)
+  #   if move_positions.count == 1
+  #     pos = move_positions.first
+  #     unless perform_slide(pos) || perform_jump(pos)
+  #       raise IllegalMoveError
+  #     end
+  #   else
+  #     move_positions.each do |move_pos|
+  #       raise IllegalMoveError unless perform_jump(move_pos)
+  #     end
+  #   end
+  # end
+  # def perform_jump(move_pos)
+  #   return false unless Board.valid_pos?(move_pos)
+  #
+  #   jump_diff = [
+  #     (move_pos[0] - pos[0]).fdiv(2),
+  #     (move_pos[1] - pos[1]).fdiv(2)
+  #   ]
+  #
+  #   return false unless move_diffs.include?(jump_diff)
+  #   jumped_pos = [
+  #     pos[0] + jump_diff[0],
+  #     pos[1] + jump_diff[1]
+  #   ]
+  #
+  #   if board.empty?(jumped_pos) || board[jumped_pos].color == color
+  #     return false
+  #   end
+  #
+  #   board[pos] = nil
+  #   board[jumped_pos] = nil
+  #   self.pos = move_pos
+  #   board[move_pos] = self
+  #
+  #   maybe_promote
+  #
+  #   true
+  # end
+
   # could just used logic in perform jump to delete intermediate piece. Don't need make move step
 
   def capture_positions(directions) #renamed to directions
