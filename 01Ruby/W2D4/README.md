@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed solo. See my related blog post [here]().
+This was completed solo. See my related blog post [here](http://cssherry.tumblr.com/post/105591360644/w2d4-solo-programming-checkers-and-the-beauty-of).
 
 ## Week 2
 ### W2D4
