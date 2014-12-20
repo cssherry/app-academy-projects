@@ -45,6 +45,15 @@ This repository contains a list of projects completed for App Academy.
 * Decomposition into objects
 * Inheritance, Polymorphism and DRY
 * Information hiding/encapsulation
+### [W2D4][01Ruby/W2D4]
+* Checkers
+### [W2D5][01Ruby/W2D5_Wahab]
+* Introduction to RSpec
+* RSpec Syntax
+* TDD
+* Test doubles
+* subject and let
+* guard-rspec
 
 ### [W2D4][01Ruby/w2d4]
 * Chess solo project and debugging
@@ -59,3 +68,5 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W1_a01-practice]: ./01Ruby/W1_a01-practice
 [01Ruby/w2d2_Varun]: ./01Ruby/W2D2_Varun
 [01Ruby/w2d4]: ./01Ruby/W2D4
+[01Ruby/W2D5_Wahab]: ./01Ruby/W2D5_Wahab
+[01Ruby/W2D4]: ./01Ruby/W2D4
