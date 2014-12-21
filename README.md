@@ -58,6 +58,14 @@ This repository contains a list of projects completed for App Academy.
 ### [W2D4][01Ruby/w2d4]
 * Chess solo project and debugging
 
+### [W2D5][01Ruby/W2D5_Wahab]
+* Introduction to RSpec
+* RSpec Syntax
+* TDD
+* Test doubles
+* subject and let
+* guard-rspec
+
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
 [01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka
@@ -70,3 +78,4 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/w2d4]: ./01Ruby/W2D4
 [01Ruby/W2D5_Wahab]: ./01Ruby/W2D5_Wahab
 [01Ruby/W2D4]: ./01Ruby/W2D4
+[01Ruby/W2D5_Wahab]: ./01Ruby/W2D5_Wahab
