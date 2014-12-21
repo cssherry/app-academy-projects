@@ -67,11 +67,11 @@ class Card
   end
 
   # Compares two cards to see if they're equal in suit & value.
-  def ==(other_card)
-    return false if other_card.nil?
+  def ==(other)
+    return false if other.nil?
 
     [:suit, :value].all? do |attr|
-      self.send(attr) == other_card.send(attr)
+      self.send(attr) == other.send(attr)
     end
   end
 

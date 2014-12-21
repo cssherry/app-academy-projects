@@ -34,12 +34,9 @@ further classes:
 * A Deck class that holds the cards and shuffles them.
 * A Hand class that holds a hand's worth of cards, computes the worth of a
   hand, tells if it is busted.
-* A Player class to represent the players at the table; a HumanPlayer
-  subclass is how your user will interact with the game.
-* A Dealer subclass of Player that plays the dealer's hand, tracks and pays
-  bets.
-* A Game class, which will keep track of the deck, players, and dealer, and
-  has a single public method, `#play_round`.
+* A Player class to represent the players at the table; a HumanPlayer subclass is how your user will interact with the game.
+* A Dealer subclass of Player that plays the dealer's hand, tracks and pays bets.
+* A Game class, which will keep track of the deck, players, and dealer, and has a single public method, `#play_round`.
 
 ## Specs
 
