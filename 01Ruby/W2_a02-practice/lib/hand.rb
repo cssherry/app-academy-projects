@@ -14,19 +14,42 @@ class Hand
   end
 
   def points
-    
+    aces = 0
+    total = 0
+    @cards.each do | card |
+      if card.value == :ace
+        aces += 1
+      else
+        total += card.blackjack_value
+      end
+    end
+
+    while aces > 0
+      total + aces * 11 < 22 ? total += 11 : total += 1
+      aces -= 1
+    end
+
+    total
   end
 
   def busted?
+    points > 21 ? true : false
   end
 
   def hit(deck)
+    raise "already busted" if busted?
+    @cards += deck.take(1)
   end
 
   def beats?(other_hand)
+    return true if other_hand.busted?
+    return false if busted?
+    other_hand.points < points ? true : false
   end
 
   def return_cards(deck)
+    deck.return(cards)
+    @cards = []
   end
 
   def to_s
