@@ -66,6 +66,8 @@ This repository contains a list of projects completed for App Academy.
 * subject and let
 * guard-rspec
 
+### [Practice Assessment][01Ruby/W2_a02-practice/try2]
+
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
 [01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka
@@ -79,3 +81,4 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W2D5_Wahab]: ./01Ruby/W2D5_Wahab
 [01Ruby/W2D4]: ./01Ruby/W2D4
 [01Ruby/W2D5_Wahab]: ./01Ruby/W2D5_Wahab
+[01Ruby/W2_a02-practice/try2]: ./01Ruby/W2_a02-practice/try2
