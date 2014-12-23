@@ -66,6 +66,11 @@ This repository contains a list of projects completed for App Academy.
 * subject and let
 * guard-rspec
 
+## Week 3
+### [W3D1][02SQL/w3d1]
+* SQL Fundamentals
+* Formatting SQL Code
+
 ### [Practice Assessment][01Ruby/W2_a02-practice/try2]
 
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
@@ -80,5 +85,5 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/w2d4]: ./01Ruby/W2D4
 [01Ruby/W2D5_Wahab]: ./01Ruby/W2D5_Wahab
 [01Ruby/W2D4]: ./01Ruby/W2D4
-[01Ruby/W2D5_Wahab]: ./01Ruby/W2D5_Wahab
-[01Ruby/W2_a02-practice/try2]: ./01Ruby/W2_a02-practice/try2
+[01Ruby/W2_a02-practice/try2]: ./01Ruby/W2_a02-practice
+[02SQL/w3d1]: ./02SQL/w3d1
