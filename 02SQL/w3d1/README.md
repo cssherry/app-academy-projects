@@ -2,7 +2,7 @@
 ====================
 This was completed with [William](https://github.com/willcreager). See my related blog post [here]().
 
-### [W3D1][02SQL/w3d1]
+### W3D1
 * SQL Fundamentals
 * Formatting SQL Code
 
