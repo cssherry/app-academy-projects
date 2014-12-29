@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [William](https://github.com/willcreager). See my related blog post [here]().
+This was completed with [William](https://github.com/willcreager). See my related blog post [here](http://cssherry.tumblr.com/post/105945619939/w2d5-sql-introduction).
 
 ### W3D1
 * SQL Fundamentals
