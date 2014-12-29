@@ -71,6 +71,11 @@ This repository contains a list of projects completed for App Academy.
 * SQL Fundamentals
 * Formatting SQL Code
 
+### [W3D2][02SQL/W3D2]
+* SQL + Ruby
+* SQLite3
+* Heredocs
+
 ### [Practice Assessment][01Ruby/W2_a02-practice/try2]
 
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
@@ -87,3 +92,4 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W2D4]: ./01Ruby/W2D4
 [01Ruby/W2_a02-practice/try2]: ./01Ruby/W2_a02-practice
 [02SQL/w3d1]: ./02SQL/w3d1
+[02SQL/W3D2]: ./02SQL/W3D2

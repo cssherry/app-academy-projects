@@ -2,9 +2,10 @@
 ====================
 This was partially completed with [Sabice](https://github.com/nihilence), partially solo. See my related blog post [here]().
 
-### W3D1
-* SQL Fundamentals
-* Formatting SQL Code
+### W3D2
+* SQL + Ruby
+* SQLite3
+* Heredocs
 
 # How to Run These Files
 These files require Ruby and SQL to run. The best ruby tutorial I've found is this: [Ruby Installation Tutorial](http://installrails.com/steps). To run SQL, just install [Postgres](http://www.postgresql.org/).
