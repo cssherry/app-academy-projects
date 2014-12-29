@@ -4,12 +4,12 @@ This repository contains a list of projects completed for App Academy.
 
 ## Week 1
 
-### [w1d1][01Ruby/W1D1_Luke]
+### [W1D1][01Ruby/W1D1_Luke]
 * Primitive Ruby types (common methods)
 * Debugging
 * Running/loading Ruby code
 
-### [w1d2][01Ruby/W1D2_Ander]
+### [W1D2][01Ruby/W1D2_Ander]
 * Methods
 * Iteration
 * Symbols, Strings, and Option Hashes
@@ -17,16 +17,16 @@ This repository contains a list of projects completed for App Academy.
 * Classes
 * Pass by reference
 
-### [w1d3][01Ruby/W1D3_Ashoka]
+### [W1D3][01Ruby/W1D3_Ashoka]
 * Refactoring and Code Smells
 * Scope
 * Hash Defaults
 
-### [w1d4][01Ruby/W1D4_Pash]
+### [W1D4][01Ruby/W1D4_Pash]
 * Blocks
 * Recursion
 
-### [w1d5][01Ruby/W1D5_Ashoka]
+### [W1D5][01Ruby/W1D5_Ashoka]
 * Intro data structures
 
 ### [Additional Recursion exercises][01Ruby/recursion_exercises-master]
@@ -35,7 +35,7 @@ This repository contains a list of projects completed for App Academy.
 
 ## Week 2
 
-### [w2d1][01Ruby/W2D1_Phoebe]
+### [W2D1][01Ruby/W2D1_Phoebe]
 * Serialization (JSON and YAML)
 * Gems and rbenv
 
