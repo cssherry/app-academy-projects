@@ -1,0 +1,64 @@
+def find_url_object
+  url = gets.chomp
+  url_object = ShortenedUrl.find_by(short_url: url)
+end
+
+def get_new_tags(url_object)
+  these_tags = url_object.tag_topics.pluck(:tag)
+  puts "This URL's tags: #{these_tags.join(", ")}"
+  puts "List some tags."
+  gets.chomp.scan /[a-z]+/
+end
+
+def print_all_tags
+  all_tags = TagTopic.all.pluck(:tag)
+  puts "All tags: #{all_tags.join(", ")}"
+end
+
+def apply_tags(url_object, new_tags)
+  new_tags.each do |tag_name|
+    tag_object = TagTopic.find_by(tag: tag_name)
+    Tagging.create!(tag_id: tag_object.id, short_url_id: url_object.id)
+  end
+end
+
+
+begin
+  puts "What is your email?"
+  email = gets.chomp
+  current_user = User.find_by!(email: email)
+rescue ActiveRecord::RecordNotFound
+  puts "Yay, new user!"
+  current_user = User.create!(email: email)
+end
+
+loop do
+  puts "Do you want to visit a shortened URL or create a new one? (v/c/t) Enter e if you want to exit"
+  case gets.chomp
+  when 'v'
+    puts "Which url do you want to visit?"
+    url_object = find_url_object
+    Visit.create!(visitor_id: current_user.id, short_url_id: url_object.id)
+    Launchy.open( url_object.long_url )
+  when 'c'
+    puts "What url do you want to shorten?"
+    url_object = ShortenedUrl.create_for_user_and_long_url!(current_user, gets.chomp)
+    puts "Your shortened url is #{url_object.short_url}"
+    print_all_tags
+    new_tags = get_new_tags(url_object)
+    apply_tags(url_object, new_tags)
+  when 't'
+    puts "What URL are you tagging?"
+    url_object = find_url_object
+    print_all_tags
+    new_tags = get_new_tags(url_object)
+    new_tags.each do |tag_name|
+      if TagTopic.find_by(tag: tag_name).nil?
+        TagTopic.create!(tag: tag_name)
+      end
+    end
+    apply_tags(url_object, new_tags)
+  when 'e'
+    exit
+  end
+end
