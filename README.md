@@ -65,6 +65,7 @@ This repository contains a list of projects completed for App Academy.
 * Test doubles
 * subject and let
 * guard-rspec
+### [Practice Assessment][01Ruby/W2_a02-practice/try2]
 
 ## Week 3
 ### [W3D1][02SQL/w3d1]
@@ -76,7 +77,13 @@ This repository contains a list of projects completed for App Academy.
 * SQLite3
 * Heredocs
 
-### [Practice Assessment][01Ruby/W2_a02-practice/try2]
+### [W3D3][02SQL/W3D3]
+* Migrations
+* ORM
+* Associations
+* Rails Conventions
+* Validations
+* ActiveRecord and Indexes
 
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
@@ -93,3 +100,4 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W2_a02-practice/try2]: ./01Ruby/W2_a02-practice
 [02SQL/w3d1]: ./02SQL/w3d1
 [02SQL/W3D2]: ./02SQL/W3D2
+[02SQL/W3D3]: ./02SQL/W3D3
