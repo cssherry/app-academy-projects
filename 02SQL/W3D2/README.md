@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Sabice](https://github.com/nihilence), partially solo. See my related blog post [here]().
+This was partially completed with [Sabice](https://github.com/nihilence), partially solo. See my related blog post [here](http://cssherry.tumblr.com/post/106500689244/w3d2-sql-ruby).
 
 ### W3D2
 * SQL + Ruby
