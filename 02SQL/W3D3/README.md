@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Peter](https://github.com/nihilence), partially solo. See my related blog post [here](https://github.com/peterjeliot).
+This was partially completed with [Peter](https://github.com/peterjeliot), partially solo. See my related blog post [here](http://cssherry.tumblr.com/post/106598466919/w3d3-activerecord-magic).
 
 ### W3D3
 * Migrations
