@@ -111,7 +111,6 @@ describe SQLObject do
 
   describe '#insert' do
     let(:cat) { Cat.new(name: 'Gizmo', owner_id: 1) }
-
     before(:each) { cat.insert }
 
     it '#attribute_values returns array of values' do
@@ -140,7 +139,7 @@ describe SQLObject do
   describe '#update' do
     it '#update changes attributes' do
       human = Human.find(2)
-
+      p human.attributes
       human.fname = 'Matthew'
       human.lname = 'von Rubens'
       human.update
