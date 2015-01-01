@@ -10,12 +10,17 @@ module Searchable
       values << value
     end
 
-    sql_string =
+    sql_string = "SELECT *
+                  FROM #{table_name}
+                  WHERE #{where_string.join(" AND ")}"
 
-    DBConnection.execute(sql_string, *values[1..-1])
+    results = DBConnection.execute(sql_string, *values)
+    parse_all(results)
   end
 end
 
 class SQLObject
   # Mixin Searchable here...
+  extend Searchable
+
 end
