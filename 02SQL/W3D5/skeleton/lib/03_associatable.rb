@@ -40,6 +40,7 @@ module Associatable
 
   def belongs_to(name, options = {})
     options = BelongsToOptions.new(name, options)
+    assoc_options[name] = options #has to be up here, not in define_method block
     define_method(name) do
       current_id = id
       primary_key = options.send(:primary_key)
@@ -47,7 +48,6 @@ module Associatable
       result = model_class.where(primary_key => current_id)
       result.first
     end
-
   end
 
   def has_many(name, options = {})
@@ -60,9 +60,34 @@ module Associatable
     end
   end
 
+  def has_one_through(name, through_name, source_name)
+    current_class = self
+    define_method(name) do
+      current_class.belongs_to(through_name)
+      through_options = assoc_options[through_name]
+      current_class.belongs_to(source_name)
+      source_options = through_options.model_class.assoc_options[source_name]
+
+      current_id = id
+      through_primary_key = through_options.send(:primary_key)
+      through_model_class = through_options.send(:model_class)
+      through_result = through_model_class.where(through_primary_key => current_id)
+
+      through_id = through_result.first.id
+      primary_key = source_options.send(:primary_key)
+      model_class = source_options.send(:model_class)
+      result = model_class.where(primary_key => through_id)
+      result.first
+    end
+  end
+
   def assoc_options
     # Wait to implement this in Phase IVa. Modify `belongs_to`, too.
+    @assoc_options ||= {}
+  end
 
+  def assoc_options=(name, value)
+    @assoc_options[name] = value
   end
 end
 
