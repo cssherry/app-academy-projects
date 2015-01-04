@@ -3,7 +3,9 @@ require '03_associatable'
 describe 'AssocOptions' do
   describe 'BelongsToOptions' do
     it 'provides defaults' do
+
       options = BelongsToOptions.new('house')
+
 
       expect(options.foreign_key).to eq(:house_id)
       expect(options.class_name).to eq('House')
@@ -59,6 +61,7 @@ describe 'AssocOptions' do
     end
 
     it '#model_class returns class of associated object' do
+
       options = BelongsToOptions.new('human')
       expect(options.model_class).to eq(Human)
       expect(options.table_name).to eq('humans')
