@@ -65,6 +65,7 @@ This repository contains a list of projects completed for App Academy.
 * Test doubles
 * subject and let
 * guard-rspec
+
 ### [Practice Assessment][01Ruby/W2_a02-practice/try2]
 
 ## Week 3
