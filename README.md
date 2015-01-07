@@ -78,7 +78,7 @@ This repository contains a list of projects completed for App Academy.
 * SQLite3
 * Heredocs
 
-### [W3D3][02SQL/W3D3]
+### [W3D3](02SQL/W3D3)
 * Migrations
 * ORM
 * Associations
