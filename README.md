@@ -86,6 +86,19 @@ This repository contains a list of projects completed for App Academy.
 * Validations
 * ActiveRecord and Indexes
 
+### [W3D4](02SQL/W3D4)
+* ActiveRecord::Relation
+* ActiveRecord and Joins
+* Scopes
+
+### [W3D5](02SQL/W3D5)
+* Introduction to RSpec
+* RSpec Syntax
+* TDD
+* Test doubles
+* subject and let
+* guard-rspec
+
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
 [01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka
@@ -101,4 +114,6 @@ This repository contains a list of projects completed for App Academy.
 [01Ruby/W2_a02-practice/try2]: ./01Ruby/W2_a02-practice
 [02SQL/w3d1]: ./02SQL/w3d1
 [02SQL/W3D2]: ./02SQL/W3D2
-[02SQL/W3D3]: ./02SQL/W3D3
+[02SQL/W3D4]: ./02SQL/W3D4
+[02SQL/W3D5]: ./02SQL/W3D5
+
