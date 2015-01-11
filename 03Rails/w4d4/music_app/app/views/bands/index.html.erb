@@ -1,0 +1,10 @@
+<% content_for :heading do %>
+All Bands
+<% end %>
+
+<% @bands.order(:id).each do |band| %>
+  <%= render "layouts/band", band: band %>
+<% end %>
+
+<br>
+<%= link_to "Create New Band", new_band_url %>
