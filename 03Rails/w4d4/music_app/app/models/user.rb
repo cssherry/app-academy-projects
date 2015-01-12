@@ -13,7 +13,7 @@
 class User < ActiveRecord::Base
   attr_reader :password
   validates :email, :password_digest, :session_token, presence: true, uniqueness: true
-  validates :password, length: {minimum: 6, allow_nul: true}
+  validates :password, length: {minimum:6, allow_nul: true}
   validate :unique_email?
 
   has_many :notes, dependent: :destroy
