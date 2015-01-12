@@ -1,0 +1,27 @@
+<form action= <%= session_url %> method="post">
+  <input
+  name="authenticity_token"
+  type="hidden"
+  value="<%= form_authenticity_token %>">
+
+  <table>
+    <tr>
+      <td><label for="username">User Name:</label></td>
+      <td><input type="text" name="session[username]" id: "username"/></td>
+    </tr>
+    <tr>
+      <td><label for="password">Password:</label></td>
+      <td><input type="password" name="session[password]" id: "password"/></td>
+    </tr>
+  </table>
+
+  <input type="submit" value="Log in">
+
+  <% if flash[:errors] %>
+  <p style="color:red">
+    <% flash[:errors].each do |error| %>
+    <%= error %><br>
+    <% end %>
+  </p>
+  <% end %>
+</form>

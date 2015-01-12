@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cats99: <%= @heading %></title>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if current_user.nil? %>
+  <%= link_to "Login!", new_session_url%> |
+  <%= link_to "Create New User!", new_user_url%>
+  <h1><%= @heading %></h1>
+
+
+<% else %>
+      <%= link_to 'See All Cats', cats_url %> |
+      <% if @cat.nil? %>
+        <%= link_to "Request Cat", new_cat_rental_request_url %>
+      <% else %>
+        <%= link_to "Request Cat", new_cat_rental_request_url(cat_id: @cat.id) %>
+      <% end %> |
+      <%= link_to 'Create New Cat', new_cat_url %> |
+      <%= link_to "Profile for #{current_user.username}", user_url(current_user) %>
+
+      <%= button_to "Log out", session_url, method: :delete %>
+
+      <h1><%= @heading %></h1>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

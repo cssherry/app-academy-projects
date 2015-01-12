@@ -1,0 +1,60 @@
+<% if @cat.persisted? %>
+<form action = <%= cat_url(@cat) %> method="post">
+<% else %>
+<form action = <%= cats_url %> method="post">
+<% end %>
+  <input type="hidden" name="authenticity_token" value= <%= form_authenticity_token %> />
+
+  <table>
+    <tr>
+      <td><label for="cat_name">Name*: </label></td>
+      <td><input name="cat[name]" id="cat_name" type="text" value = <%= @cat.name %>></td>
+    </tr>
+    <tr>
+      <td><label for="cat_birth_date">Birthdate*: </label></td>
+      <td><input name="cat[birth_date]" id="cat_age" type="date" value = <%= @cat.birth_date %>></td>
+    </tr>
+    <tr>
+      <td><label>Sex*: </label></td>
+      <td>
+        <% ["M", "F"].each do |sex| %>
+          <% checked = @cat.sex == sex ? "checked" : ""%>
+          <label for="cat_sex">
+            <input name="cat[sex]" type="radio" value = "<%= sex %>" <%= checked %> >
+            <%= sex %>
+          </label>
+        <% end %>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="cat_color">Coat color*: </label></td>
+      <td><select name="cat[color]">
+          <% %w(choose black brown white grey ginger calico).each do |color| %>
+            <% selected = @cat.color == color ? "selected" : ""%>
+            <option value = "<%= color %>" <%= selected %>> <%= color %> </option>
+          <% end %>
+        </select></td>
+    </tr>
+    <tr>
+      <td><label for="cat_description">Description: </label> </td>
+      <td><textarea name="cat[description]" id="cat_description" value = @cat.description></textarea></td>
+    </tr>
+  </table>
+
+  <% if @cat.persisted? %>
+    <input type='hidden' name='_method' value='PATCH'>
+  <% end %>
+
+  <em style="color:red">Required fields have an asterisk (*)</em><br><br>
+
+  <input type="submit" value="Submit my cat!">
+
+  <% if flash[:errors] %>
+  <p style="color:red">
+  <% flash[:errors].each do |error| %>
+    <%= error %><br>
+  <% end %>
+  </p>
+  <% end %>
+
+</form>

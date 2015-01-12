@@ -1,0 +1,1 @@
+ c = Cat.new(birth_date: Date.new(2005, 1, 2),

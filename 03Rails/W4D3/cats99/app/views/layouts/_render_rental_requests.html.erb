@@ -1,0 +1,15 @@
+<%= link_to "Request ##{@rental_request.id}", cat_rental_request_url(@rental_request) %>
+<table>
+  <tr>
+    <td>Start Date: </td><td><%= @rental_request.start_date %></td>
+  </tr>
+  <tr>
+    <td>End Date: </td><td><%= @rental_request.end_date %></td>
+  </tr>
+  <tr>
+    <td>Requester: </td><td><%= @rental_request.requester.username %></td>
+  </tr>
+  <tr>
+    <td>Status: </td><td><%= @rental_request.status %></td>
+  </tr>
+</table>

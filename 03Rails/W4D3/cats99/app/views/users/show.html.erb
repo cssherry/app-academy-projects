@@ -1,0 +1,30 @@
+<h2>Your Cats</h2>
+<% @user.cats.each do |cat| %>
+  <% @cat = cat %>
+  <%= render "layouts/render_cat" %>
+
+  <h4><%= cat.name %>'s Rental Requests</h4>
+  <% @user.requests_for_cat(cat).order(:start_date, :end_date).each do |request|%>
+    <% @rental_request = request %>
+    <%= render "layouts/render_rental_requests" %>
+    <% if request.status == "PENDING" %>
+      <%= button_to "Approve Request", approve_cat_rental_request_url(request), method: :approve %>
+      <%= button_to "Reject Request", deny_cat_rental_request_url(request), method: :deny %>
+    <% end %><br>
+  <% end %>
+
+<% end %>
+
+
+<h2>Your Approved Cat Rental Requests</h2>
+  <% @user.approved_requests_made.order(:start_date, :end_date).each do |cat_rental_request| %>
+    <% @rental_request = cat_rental_request %>
+    <%= render "layouts/render_rental_requests" %>
+  <% end %>
+
+<h2>Your Pending Cat Rental Requests</h2>
+  <% @user.pending_requests_made.order(:start_date, :end_date).each do |cat_rental_request| %>
+    <% @rental_request = cat_rental_request %>
+    <%= render "layouts/render_rental_requests" %>
+    <%= link_to "Edit Request", edit_cat_rental_request_url(@rental_request) %>
+  <% end %>

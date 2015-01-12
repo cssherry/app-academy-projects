@@ -1,0 +1,13 @@
+<!-- app/views/cats/show.html.erb -->
+<%= render "layouts/render_cat" %>
+
+<h2>My Rental Requests:</h2>
+
+<% @cat_rental_requests.order(:start_date, :end_date).each do |rental_request| %>
+  <% @rental_request = rental_request %>
+  <%= render "layouts/render_rental_requests" %>
+  <% if  rental_request.status == "PENDING" && current_user.id == @cat.user_id %>
+    <%= button_to "Approve Request", approve_cat_rental_request_url(rental_request), method: :approve %>
+    <%= button_to "Reject Request", deny_cat_rental_request_url(rental_request), method: :deny %>
+  <% end %><br>
+<% end %>
