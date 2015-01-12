@@ -1,9 +1,0 @@
-<% content_for :heading do %>
-Edit Track: <%= @track.name %>
-<% end %>
-
-<% content_for :url do %>
-<%= track_url(@track) %>
-<% end %>
-
-<%= render "form", track: @track %>

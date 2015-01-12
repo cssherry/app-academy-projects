@@ -1,9 +1,0 @@
-<% content_for :heading do %>
-Edit Album: <%= @album.name %>
-<% end %>
-
-<% content_for :url do %>
-<%= album_url(@album) %>
-<% end %>
-
-<%= render "form", album: @album %>

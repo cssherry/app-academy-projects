@@ -1,9 +1,0 @@
-<% content_for :heading do %>
-Edit Band: <%= @band.name %>
-<% end %>
-
-<% content_for :url do %>
-<%= band_url(@band) %>
-<% end %>
-
-<%= render "form", band: @band %>

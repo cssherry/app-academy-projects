@@ -1,9 +1,0 @@
-<% content_for :heading do %>
-Edit Note: <%= @note.id %>
-<% end %>
-
-<% content_for :url do %>
-<%= note_url(@note) %>
-<% end %>
-
-<%= render "form", note: @note %>

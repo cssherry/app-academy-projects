@@ -1,7 +1,0 @@
-<h1><%= @post.title %></h1>
-<h2>By <%= @post.author.username %></h2>
-<% if current_user.id == @post.user_id %>
-  <%= link_to "Edit Post", edit_post_url(@post) %>
-<% end %>
-
-<p><%= @post.content %></p>

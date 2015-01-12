@@ -1,9 +1,0 @@
-<h1>All Subs</h1>
-
-<% @subs.each do |sub| %>
-  <%= link_to "#{sub.title}", sub_url(sub) %>
-  <% if current_user.id == sub.mod_id %>
-    <%= link_to "Edit Sub", edit_sub_url(sub) %>
-  <% end %>
-  <br>
-<% end %>

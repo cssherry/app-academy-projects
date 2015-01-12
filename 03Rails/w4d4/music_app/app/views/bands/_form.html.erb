@@ -1,9 +1,0 @@
-<% content_for :form do %>
-  <label for="name">Name: </label>
-  <input type="string" name="band[name]" id: "name" value = <%= band.name %> >
-<% end %>
-
-<%= render "layouts/form",
-    model_object: band,
-    button: {edit: "Edit Band", create: "Create New Band"}
-%>

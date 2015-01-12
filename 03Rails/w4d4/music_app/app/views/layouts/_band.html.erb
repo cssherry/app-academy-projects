@@ -1,5 +1,0 @@
-<b>Band #<%= band.id %>:</b> <%= link_to band.name.capitalize, band_url(band) %>
-<small><%= link_to "Edit", edit_band_url(band) %></small>
-
-<%= button_to "Delete", band_url(band), method: :delete if request.original_url == band_url(band) %>
-<br>

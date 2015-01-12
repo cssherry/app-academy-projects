@@ -1,9 +1,0 @@
-<p>
-  <b><%=  note.user.email %></b> <small><i>written <%= note.time_ago %></i></small> <br>
-  <%= note.note %><small>  <%= link_to "Edit", edit_note_url(note) %></small><br>
-  <% unless request.original_url == track_url(note.track) %>
-   <i>About <%= link_to note.track.name.capitalize, track_url(note.track) %> from the <%= link_to note.track.album.name.capitalize, album_url(note.track.album)%> album </i>
-  <% end %>
-  <%= button_to "Delete", note_url(note), method: :delete if current_user.id == note.user.id%>
-
-</p>

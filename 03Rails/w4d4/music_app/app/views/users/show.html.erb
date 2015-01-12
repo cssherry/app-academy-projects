@@ -1,9 +1,0 @@
-<% content_for :heading do %>
-Profile for <%= current_user.email %>
-<% end %>
-
-<h3>Notes</h3>
-
-<% current_user.notes.order(:updated_at).each do |note| %>
-  <%= render "layouts/note", note: note %>
-<% end %>
