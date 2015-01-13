@@ -5,10 +5,23 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <% if current_user %>
+    <h1>Welcome <%= current_user.username   %> </h1>
+    <%= button_to 'Sign Out', session_url, method: :delete %>
+
+  <% end %>
 </head>
 <body>
 
 <%= yield %>
+
+<% if flash[:errors] %>
+<p style="color:red">
+  <% flash[:errors].each do |error| %>
+  <%= error %> <br>
+  <% end %>
+</p>
+<% end %>
 
 </body>
 </html>

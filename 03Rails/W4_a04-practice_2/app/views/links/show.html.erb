@@ -1,0 +1,15 @@
+<h2><%= link_to @link.title, @link.url %>
+</h2>
+<h3><%= link_to 'Links', links_url %> | <%= link_to 'Edit Link', edit_link_url(@link) %>
+
+</h3>
+<%= @link.url %>
+
+<h3>Comments</h3>
+
+<% @link.comments.each do |comment| %>
+  <%= comment.body %> <%= button_to 'Remove Comment', comment_url(comment), method: :delete %>
+<% end %>
+
+<h4>Add Comment</h4>
+<%= render "comments/form", link: @link %>

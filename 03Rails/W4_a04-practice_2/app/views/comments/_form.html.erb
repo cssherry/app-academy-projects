@@ -1,0 +1,11 @@
+<form id="Comment" action= <%= link_comments_url(link) %> method="post">
+
+  <label>Comment
+    <input type="text" name="comment[body]" value="">
+  </label>
+
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <input type="submit" value= "Add Comment">
+</form>
