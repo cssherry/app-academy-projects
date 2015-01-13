@@ -1,0 +1,13 @@
+<h1><%= @goal.body %></h1>
+
+<ul>
+  <% @goal.comments.each do |comment| %>
+    <ul>
+      <%= comment.body %>
+      <%= button_to "Reply to comment", new_comment_url + "?id=#{comment.id}", method: :get %>
+      <%= button_to "Delete comment", comment_url(comment) , method: :delete %>
+      <br>
+    </ul>
+  <% end %>
+</ul>
+<%= render "layouts/comment_form", url: comments_url, obj: @goal %>

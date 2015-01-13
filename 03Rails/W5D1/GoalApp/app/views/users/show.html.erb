@@ -1,0 +1,24 @@
+<h1>Welcome, <%= @user.username %>!</h1>
+
+<% get_goals(@user).each do |goal| %>
+  <%= link_to goal.body, goal_url(goal) %>
+  <% if current_user == @user %>
+    <%= button_to "Delete", goal_url(goal), method: :delete %>
+    <%= button_to "Finished", completed_goal_url(goal), method: :get %>
+  <% end %>
+  <br>
+<% end %>
+
+<h2>Comments</h2>
+
+<ul>
+  <% @user.comments.each do |comment| %>
+  <ul>
+    <%= render "layouts/comment", comment: comment %>
+  </ul>
+  <% end %>
+</ul>
+
+<%= render "layouts/comment_form", url: comments_url, obj: @user%>
+
+<%= render "leaderboard" %>

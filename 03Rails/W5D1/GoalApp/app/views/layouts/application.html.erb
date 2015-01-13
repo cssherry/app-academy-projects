@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoalApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if flash[:errors] %>
+  <% flash[:errors].each do |msg| %>
+    <%= msg %>
+  <% end %>
+<% end %>
+
+<%= button_to "Log out", session_url, method: :delete if current_user %>
+
+<%= yield %>
+
+</body>
+</html>

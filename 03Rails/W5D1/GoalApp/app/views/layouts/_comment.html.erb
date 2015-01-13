@@ -1,0 +1,9 @@
+<%= comment.body %>
+<%= button_to "Reply to comment", new_comment_url + "?type=#{comment.class}&id=#{comment.id}", method: :get %>
+<%= button_to "Delete comment", comment_url(comment) , method: :delete %>
+<br>
+
+<% comment.comments.each do |comment| %>
+  <%= render "layouts/comment", comment: comment %>
+  <!-- need to use layouts/comment because it will look in parent object view folder -->
+<% end %>

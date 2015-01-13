@@ -1,0 +1,12 @@
+<h1><%= @goal.body %></h1>
+<%= @goal.cheers.count %> cheer
+<%= button_to "Cheer", goal_cheers_url(@goal.id), method: :post %>
+
+<ul>
+  <% @goal.comments.each do |comment| %>
+    <ul>
+      <%= render "layouts/comment", comment: comment %>
+    </ul>
+  <% end %>
+</ul>
+<%= render "layouts/comment_form", url: comments_url, obj: @goal %>
