@@ -1,0 +1,25 @@
+<form id="Link" action= <%=  url  %> method="post">
+
+  <label for="Title"> Title
+    <input type="string" name="link[title]" value="<%= link.title %>">
+  </label><br>
+
+  <label for="URL"> URL
+    <input type="string" name="link[url]" value="<%= link.url %>">
+  </label><br>
+
+  <% if link.persisted? %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <input type="submit" value= "<%= submit_button %>">
+</form>
+
+<% if flash[:errors] %>
+  <p style="color:red">
+    <% flash[:errors].each do |error| %>
+      <%= error %> <br>
+      <% end %>
+  </p>
+<% end %>
