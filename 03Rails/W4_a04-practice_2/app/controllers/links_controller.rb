@@ -2,6 +2,7 @@ class LinksController < ApplicationController
   before_action :redirect_if_logged_out
 
   def index
+    # solution passed in @links
   end
 
   def new
