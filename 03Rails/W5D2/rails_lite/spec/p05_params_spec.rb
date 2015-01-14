@@ -1,6 +1,7 @@
 require 'webrick'
 require 'phase5/params'
 require 'phase5/controller_base'
+require 'byebug'
 
 describe Phase5::Params do
   before(:all) do
@@ -42,6 +43,7 @@ describe Phase5::Params do
   end
 
   context "post body" do
+
     it "handles single key and value" do
       req.stub(:body) { "key=val" }
       params = Phase5::Params.new(req)
