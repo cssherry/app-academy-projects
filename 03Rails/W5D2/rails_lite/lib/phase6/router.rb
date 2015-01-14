@@ -3,10 +3,19 @@ module Phase6
     attr_reader :pattern, :http_method, :controller_class, :action_name
 
     def initialize(pattern, http_method, controller_class, action_name)
+      @pattern = pattern
+      @http_method = http_method
+      @controller_class = controller_class
+      @action_name = action_name
     end
 
     # checks if pattern matches path and method matches request method
     def matches?(req)
+      if req.request_uri == @pattern
+        if req.request_method.downcase.to_sym == @http_method
+        end
+      end
+      false
     end
 
     # use pattern to pull out route params (save for later?)

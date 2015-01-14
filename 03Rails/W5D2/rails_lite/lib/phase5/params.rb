@@ -19,15 +19,12 @@ module Phase5
       query.merge(body).merge(route_params)
     end
 
-    def parse_key(key)
-      key.split(/\]\[|\[|\]/)
-    end
-
     def parse_key_and_value(hash, query)
       keys = parse_key(query[0])
       unrepeated_keys = keys.dup #Have to dup or keys will be modified when unrepeated keys modified
       repeated_hash = []
       unrepeated_hash = hash.dup
+
       keys.each do |key|
         if unrepeated_hash[key].nil?
           break
@@ -37,11 +34,18 @@ module Phase5
           repeated_hash << unrepeated_keys.shift
         end
       end
-      nested_hash = unrepeated_keys.reverse.inject(query[1]) { |hash, key| { key => hash }}
-      merged_hashes = unrepeated_hash.merge(nested_hash)
 
-      nested_hashes = repeated_hash.reverse.inject(merged_hashes) { |hash, key| { key => hash }}
-      hash.merge(nested_hashes)
+      nested_hash = merge_hashes(unrepeated_keys, query[1], unrepeated_hash)
+      merge_hashes(repeated_hash, nested_hash, hash)
+    end
+
+    def parse_key(key)
+      key.split(/\]\[|\[|\]/)
+    end
+
+    def merge_hashes(keys, value, hash_to_merge)
+      nested_hash = keys.reverse.inject(value) { | hash, key | { key => hash } }
+      hash_to_merge.merge(nested_hash)
     end
 
     def parse_params(query)
