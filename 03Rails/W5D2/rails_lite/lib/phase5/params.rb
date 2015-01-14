@@ -44,7 +44,7 @@ module Phase5
     end
 
     def merge_hashes(keys, value, hash_to_merge)
-      nested_hash = keys.reverse.inject(value) { | hash, key | { key => hash } }
+      nested_hash = keys.reverse.inject(value) { |hash, key| {key => hash}}
       hash_to_merge.merge(nested_hash)
     end
 
