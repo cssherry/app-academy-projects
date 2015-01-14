@@ -3,7 +3,7 @@ module Phase2
     attr_reader :req, :res
 
     # Setup the controller
-    def initialize(req, res)
+    def initialize(req, res, route_params = {})
       @req = req
       @res = res
       @already_built_response = false
