@@ -9,3 +9,9 @@
 
   <input type="submit">
 </form>
+
+<% if @flash[:errors] %>
+  <p style="color:red">
+    <%= @flash[:errors].join("\n") %>
+  </p>
+<% end %>

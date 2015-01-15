@@ -7,8 +7,7 @@ module Phase5
 
     # setup the controller
     def initialize(req, res, route_params = {})
-      @req = req
-      @res = res
+      super
       @params = Params.new(req, route_params ||= {})
       session #needs to be after @req and @res is defined
     end

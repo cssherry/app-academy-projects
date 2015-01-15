@@ -113,7 +113,6 @@ describe Phase6::Router do
   describe "#draw" do
     it "creates correct routes" do
       router = Phase6::Router.new
-      byebug
       router.draw do
         get Regexp.new("^/users$"), Phase6::ControllerBase, :index
       end

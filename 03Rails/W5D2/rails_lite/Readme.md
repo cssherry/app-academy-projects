@@ -20,4 +20,4 @@
 * Run integrative specs
 
 # Phase 8
-* Create flash and flash now cookies
+* Create flash and flash now cookies. Flash.now working, but not Flash. 
