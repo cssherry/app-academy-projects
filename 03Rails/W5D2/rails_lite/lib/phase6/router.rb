@@ -52,7 +52,7 @@ module Phase6
     # evaluate the proc in the context of the instance
     # for syntactic sugar :)
     def draw(&proc)
-      obj.instance_eval{proc}
+      self.instance_eval(&proc) #pass in the variable &proc so that it gets evaluated in the instance of the code
     end
 
     # make each of these methods that
@@ -71,7 +71,8 @@ module Phase6
 
     # either throw 404 or call run on a matched route
     def run(req, res)
-      match(req) ? run(req, res) : res.status = 404
+      routes = match(req)
+      routes ? routes.run(req, res) : res.status = 404
     end
   end
 end

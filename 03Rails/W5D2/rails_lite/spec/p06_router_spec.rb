@@ -109,4 +109,15 @@ describe Phase6::Router do
       router.routes.count.should == 1
     end
   end
+
+  describe "#draw" do
+    it "creates correct routes" do
+      router = Phase6::Router.new
+      byebug
+      router.draw do
+        get Regexp.new("^/users$"), Phase6::ControllerBase, :index
+      end
+      router.routes.count.should == 1
+    end
+  end
 end

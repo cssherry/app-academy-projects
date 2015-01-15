@@ -10,7 +10,11 @@ module Phase6
       if methods.include?(name)
         send(name)
       else
-        render_content(@req.body, "text/html")
+        if File.exists?("views/#{self.class.to_s.underscore}/#{method}.html.erb")
+          render(method)
+        else
+          render_content(@req.body, "text/html")
+        end
       end
     end
   end

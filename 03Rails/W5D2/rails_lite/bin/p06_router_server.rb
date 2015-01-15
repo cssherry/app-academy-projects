@@ -1,6 +1,7 @@
 require 'webrick'
 require_relative '../lib/phase6/controller_base'
 require_relative '../lib/phase6/router'
+require 'byebug'
 
 
 # http://www.ruby-doc.org/stdlib-2.0/libdoc/webrick/rdoc/WEBrick.html
@@ -25,13 +26,13 @@ class StatusesController < Phase6::ControllerBase
       s[:cat_id] == Integer(params[:cat_id])
     end
 
-    render_content(statuses.to_s, "text/text")
+    render_content(statuses.to_s, "text/html")
   end
 end
 
 class Cats2Controller < Phase6::ControllerBase
   def index
-    render_content($cats.to_s, "text/text")
+    render_content($cats.to_s, "text/html")
   end
 end
 
