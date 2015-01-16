@@ -4,19 +4,19 @@ var twoTimes = function(value){
 
 var returnValues = function(el){
     console.log(el);
-  }
+  };
 
 Array.prototype.myEach = function(specialFunc) {
   for (var i = 0; i < this.length; i++) {
     specialFunc(this[i]);
-  };
+  }
 };
 
 Array.prototype.myMap = function(specialFun){
   var ary = [];
   for (var i = 0; i < this.length; i++) {
     ary.push(specialFun(this[i]));
-  };
+  }
 
   return ary;
 };

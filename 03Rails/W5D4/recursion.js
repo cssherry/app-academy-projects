@@ -12,7 +12,7 @@ Array.prototype.sum = function() {
   var totalSum = 0;
   this.forEach (function(el) {
     totalSum += el;
-  })
+  });
 
   return totalSum;
 };
@@ -75,10 +75,10 @@ var binarySearch = function(array, target, offset){
   } else if (target > pivot) {
     return binarySearch(rightArray, target, pivotIndex + offset + 1);
   }
-}
+};
 
 var makeChange = function(amount, coins) {
-  if (coins.length != 0) {
+  if (coins.length !== 0) {
     var change = [];
     while (amount >= coins[0]) {
       amount -= coins[0];
@@ -94,7 +94,7 @@ var makeChange = function(amount, coins) {
 var makeChangeSmart = function(amount, coins) {
   var bestResult = makeChange(amount, coins);
   for (var i = 0; i < coins.length - 1; i++) {
-    var test = makeChange(amount, coins.slice(i + 1, coins.length))
+    var test = makeChange(amount, coins.slice(i + 1, coins.length));
     if (bestResult.length > test.length) {
       bestResult = test;
     }
@@ -135,7 +135,7 @@ Array.prototype.collect = function(addedEl) {
   this.forEach(function(el){
     el.push(addedEl);
     results.push(el);
-  })
+  });
   return results;
 };
 

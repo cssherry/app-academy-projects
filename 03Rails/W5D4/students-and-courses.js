@@ -36,7 +36,7 @@ Student.prototype.courseLoad = function() {
     } else {
       studentLoad[course.department] += course.credits;
     }
-  })
+  });
   return studentLoad;
 };
 

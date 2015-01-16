@@ -1,7 +1,7 @@
 var factors = function(num) {
   var factorsArray = [];
   for (var i = 0; i < (num / 2); i++) {
-    if (num % i == 0) {
+    if (num % i === 0) {
       factorsArray.push(i, num/i);
     }
   }
