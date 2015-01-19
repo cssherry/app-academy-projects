@@ -1,8 +1,8 @@
-var readline = require('readline')
+var readline = require('readline');
 var reader = readline.createInterface({
   input: process.stdin,
   output: process.stdout
-})
+});
 
 function HanoiGame(){
   this.stacks = [[1,2,3], [], []];
@@ -14,7 +14,7 @@ HanoiGame.prototype.isWon = function(){
   } else {
     return false;
   }
-}
+};
 
 HanoiGame.prototype.isValidMove = function(startTowerIdx, endTowerIdx){
   if (this.stacks[endTowerIdx].length === 0 || this.stacks[startTowerIdx][0] < this.stacks[endTowerIdx][0]) {
@@ -48,10 +48,10 @@ HanoiGame.prototype.promptMove = function(callback) {
       var startTowerIdx = moveFrom - 1;
       var endTowerIdx = moveTo - 1;
       callback(startTowerIdx, endTowerIdx);
-  that.run(that.won)
-    })
-  })
-}
+        that.run(that.won);
+    });
+  });
+};
 
 HanoiGame.prototype.run = function(completionCallback){
   if (this.isWon()) {
@@ -67,6 +67,6 @@ HanoiGame.prototype.won = function(){
   reader.close();
 };
 
-var game = new HanoiGame
+var game = new HanoiGame;
 
 game.run(game.won);

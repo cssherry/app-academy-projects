@@ -10,7 +10,7 @@ var convertToTwoDigits = function (seconds) {
   else {
     return seconds;
   }
-}
+};
 
 Clock.prototype.printTime = function (time) {
   var seconds = convertToTwoDigits(time.getSeconds());
@@ -41,7 +41,7 @@ Clock.prototype.run = function () {
       Clock.prototype._tick(currentTime);
       that.myTimer(currentTime);
     }, Clock.TICK);
-  }
+  };
 
   this.myTimer(currentTime);
 

@@ -17,7 +17,7 @@ function askIfLessThan (el1, el2, callback) {
         console.log("Wrong Answer. Try again");
         askIfLessThan(el1, el2, callback);
       }
-  })
+  });
 }
 
 function innerBubbleSortLoop (arr, i, madeAnySwaps, outerBubbleSortLoop) {
@@ -34,12 +34,12 @@ function innerBubbleSortLoop (arr, i, madeAnySwaps, outerBubbleSortLoop) {
         var firstNum = arr[i];
         arr[i] = arr[i+1];
         arr[i+1] = firstNum;
-        innerBubbleSortLoop(arr, i+1, true, outerBubbleSortLoop )
+        innerBubbleSortLoop(arr, i+1, true, outerBubbleSortLoop );
       } else {
-        innerBubbleSortLoop(arr, i+1, madeAnySwaps, outerBubbleSortLoop)
+        innerBubbleSortLoop(arr, i+1, madeAnySwaps, outerBubbleSortLoop);
       }
       console.log("your list: " + arr);
-    })
+    });
   }
   else{
     outerBubbleSortLoop(madeAnySwaps);

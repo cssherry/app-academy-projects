@@ -1,9 +1,9 @@
 Function.prototype.myBind = function(object) {
-  fn = this
+  fn = this;
   return function(){
-    return fn.apply(object)
-  }
-}
+    return fn.apply(object);
+  };
+};
 
 function times(num, fun) {
   for (var i = 0; i < num; i++) {
