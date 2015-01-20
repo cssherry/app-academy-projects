@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Asteroids!</title>
+  </head>
+  <body>
+    <canvas id="game-canvas"></canvas>
+    <script src="./lib/util.js"></script>
+    <script src="./lib/movingObject.js"></script>
+    <script src="./lib/asteroid.js"></script>
+    <script src="./lib/game.js"></script>
+    <script src="./lib/gameView.js"></script>
+    <script>
+      var canvasEl = document.getElementById("game-canvas");
+      canvasEl.height = window.innerHeight;
+      canvasEl.width = window.innerWidth;
+      var newGame = new Asteroids.Game(canvasEl.width, canvasEl.height, 5);
+      var asteroid = new Asteroids.Asteroid([50,50]);
+      var movingObject = new Asteroids.MovingObjects([50,50], [50,50], 50, "red");
+      var newView = new Asteroids.GameView(newGame, canvasEl);
+      newView.start();
+    </script>
+  </body>
+</html>

@@ -67,6 +67,6 @@ HanoiGame.prototype.won = function(){
   reader.close();
 };
 
-var game = new HanoiGame;
+var game = new HanoiGame();
 
 game.run(game.won);
