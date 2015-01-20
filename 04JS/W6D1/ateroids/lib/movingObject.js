@@ -1,6 +1,6 @@
 (function() {
   if (typeof Asteroids === "undefined") {
-    window.Asteroids = {} //wrap everything in Astroids object purely so we only send 1 variable to the window
+    window.Asteroids = {}; //wrap everything in Astroids object purely so we only send 1 variable to the window
   }
 
   var MovingObjects = Asteroids.MovingObjects = function (pos, vel, radius, color) {
@@ -10,7 +10,7 @@
       if (color) {
         this.color = color;
       }
-    }
+    };
 
   MovingObjects.prototype.draw = function(ctx) {
     ctx.fillStyle = this.color;
@@ -30,6 +30,6 @@
   MovingObjects.prototype.move = function(){
     this.pos[0] += this.vel[0];
     this.pos[1] += this.vel[1];
-  }
+  };
 
-})()
+})();

@@ -1,30 +1,30 @@
 Function.prototype.curried = function(numArg) {
   var numbers = [];
-  var fn = this
+  var fn = this;
   var _curriedSum = function(num) {
     numbers.push(num);
     if (numbers.length === numArg) {
       return fn.apply(0, numbers);
     }
     else {
-      console.log(numbers)
+      console.log(numbers);
       return _curriedSum;
     }
-  }
-  return _curriedSum
-}
+  };
+  return _curriedSum;
+};
 
 function sum() {
-  var sum = 0
+  var totalSum = 0;
   for (i = 0; i < arguments.length; i++) {
-    sum += arguments[i];
+    totalSum += arguments[i];
   }
-  return sum;
+  return totalSum;
 }
 // console.log(sum.curried(3))
-console.log(sum.curried(4)(4))
-console.log(sum.curried(4)(4)(16))
-console.log(sum.curried(4)(4)(16)(5))
+console.log(sum.curried(4)(4));
+console.log(sum.curried(4)(4)(16));
+console.log(sum.curried(4)(4)(16)(5));
 
 
 

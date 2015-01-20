@@ -1,9 +1,9 @@
 function sum() {
-  var sum = 0
+  var totalSum = 0;
   for (i = 0; i < arguments.length; i++) {
-    sum += arguments[i];
+    totalSum += arguments[i];
   }
-  return sum;
+  return totalSum;
 }
 
-console.log(sum(1, 2, 3, 4))
+console.log(sum(1, 2, 3, 4));
