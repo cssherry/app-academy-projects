@@ -21,6 +21,10 @@
   font-size: 14px;
 }
 
+.content-header button:hover {
+  background-color: #eee;
+}
+
 .content-header h1 {
   position: absolute;
   bottom: 20px;
