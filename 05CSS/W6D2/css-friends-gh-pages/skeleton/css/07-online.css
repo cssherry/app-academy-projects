@@ -1,0 +1,13 @@
+/* PHASE 7: Online */
+
+.profile-picture .online {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 37px;
+  transform: rotate(-45deg) translateY(-10px) translateX(-35px) ;
+  z-index: 3;
+  background-color: #0c0;
+  color: #fff;
+  font-size: 12px;
+}
