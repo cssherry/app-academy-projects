@@ -1,0 +1,17 @@
+<h1> <%= board.escape('title') %> </h1>
+
+<div class='lists-and-create'>
+
+  <div class='lists'>
+
+
+  </div>
+  <form class='list-create'>
+      <label>Make a new list:
+        <input type="text" name="list[title]" value="">
+      </label><br>
+      <input type="hidden" name="list[board_id]" value="<%= board.id %>">
+      <button>Create List</button>
+  </form>
+
+</div>

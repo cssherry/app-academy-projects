@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery.ui.all
+ *= require_tree .
+ */
+
+@import "bootstrap";
+@import "font-awesome";
+
+.list-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  width: 200px;
+  padding: 5px;
+  background-color: #428bca;
+  border-radius: 5px;
+  box-shadow: 2px 1px 5px gray;
+}
+
+.list-item a, .card-create label {
+  color: white;
+}
+
+.list-item h4 {
+  display: inline;
+  color: white;
+}
+
+.card-create input, .card-create textarea {
+  width: 100%;
+}
+
+.cards {
+  margin: 5px;
+  padding: 5px;
+  white-space: normal;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #428bca;
+  border-color: #357ebd;
+  color: white;
+}
+
+.delete-list {
+  float: right;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 0 2px;
+  background-color: white;
+  border-color: white;
+  color: #777777;
+}
+
+.card-item {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 1px 5px #777777;;
+}
+
+.card-item p {
+  display: inline;
+}
+
+.delete-board, .delete-card {
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 0 2px;
+  background-color: white;
+  border-color: white;
+  color: #428bca;
+}
+
+.delete-card {
+  float: right;
+}
+
+#main {
+  margin: 0 20px;
+}
+
+label {
+  font-weight: normal;
+}
+
+label input, label textarea {
+  color: black;
+}
+
+.lists-and-create {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.lists-and-create:after {
+  content: ""; /* Empty content string */
+  clear: both;
+  display: table; /* Need this to work properly on IE */
+}
+
+
+html, body, #main, #main > div {
+  height: 100%;
+}
+
+.backdrop {
+  height: calc(100% - 90px);
+}
+
+.lists-and-create {
+  height: calc(100% - 35px);
+}
