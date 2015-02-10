@@ -1,0 +1,23 @@
+.tab-pane p {
+  margin: 15px;
+}
+
+.tabs li.active {
+  font-weight: bold;
+}
+
+#content-tabs div:not(.active) {
+  display: none;
+}
+
+#content-tabs div.active {
+  opacity: 1;
+  display: block;
+  transition: opacity 0.5s linear;
+}
+
+#content-tabs div.transitioning {
+  opacity: 0;
+  display: block;
+  transition: opacity 0.5s linear;
+}

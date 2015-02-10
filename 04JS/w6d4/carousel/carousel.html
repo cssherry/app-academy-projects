@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <script src="./jquery-1.11.2.min.js"></script>
+    <script src="./carousel.js"></script>
+    <link href="./carousel.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+      <h1>Cat Carousel</h1>
+
+    <script>
+    $(function() {
+      $('.carousel').carousel();
+    })
+    </script>
+    <div class="carousel">
+      <div class="items">
+        <img class="active" src="http://placekitten.com/g/800/600"  />
+        <img  src="http://placekitten.com/g/801/600"  />
+        <img src="http://placekitten.com/g/802/600"  />
+
+        <img src="http://placekitten.com/g/803/600" />
+
+        <img src="http://placekitten.com/g/804/600"  />
+      </div>
+
+      <a href="javascript:void(0)" class="slide-right">Prev</a>
+      <a href="javascript:void(0)" class="slide-left">Next</a>
+    </div>
+  </body>
+</html>
