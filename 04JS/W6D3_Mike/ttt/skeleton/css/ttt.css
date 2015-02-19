@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.board div {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-color: green;
+  border: 1px solid darkgreen;
+  text-align: center;
+  font-size: 80px;
+  line-height: 100%;
+}
+
+.board x {
+  background-color: white;
+  color: deeppink;
+}
+
+.board o {
+  background-color: white;
+  color: darkblue;
+}
+.board .unclicked{
+  background-color: darkorange;
+}
+
+.board .unclicked:hover {
+  background-color: orange;
+}
+
+.game-over .unclicked:hover {
+  background-color: darkorange;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+}

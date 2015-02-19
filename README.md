@@ -151,6 +151,42 @@ This repository contains a list of projects completed for App Academy.
 * Function invocation
 * Closures and Scope
 
+### W5D5
+* Intro to Callbacks: File I/O
+* this and that
+* Ways to Call a Function (exercises)
+* The Module Pattern
+* JavaScript Style
+
+## Week 6
+### W6D1
+* arguments
+* Prototypal Inheritance
+* Client-side JavaScript
+* Modules in the Browser
+* Asynchronous Client-side Code
+* Basic Canvas Drawing
+
+### W6D2
+* Semantic HTML
+* CSS Selectors
+* The Box Model
+* CSS Display Attribute
+* Positioning and Floating
+
+### W6D3
+* The Document Object Model
+* jQuery I: Selection and Manipulation
+* jQuery II: Events
+* jQuery III: Ready
+* jQuery IV: All The Ways
+* jQuery V: Data Attributes
+
+### W6D4
+* jQuery VI: Event Delegation
+* jQuery VII: Triggering
+* Intro to jQuery Plugins
+
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
 [01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka
