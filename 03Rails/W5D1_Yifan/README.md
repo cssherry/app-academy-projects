@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Yifan](https://github.com/jiang-yifan). See my related blog post [here](http://blog.cssherry.com/post/107972737419/w5d1-rails-integrative-testing).
+This was completed with [Yifan](https://github.com/jiang-yifan). See my related blog post [here](http://blog.cssherry.com/post/107972737419/w5d1-rails-integrative-testing).
 
 ### W5D1
 * RSpec and Rails Setup

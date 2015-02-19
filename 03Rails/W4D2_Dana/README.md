@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Dana](https://github.com/ladyd252). See my related blog post [here](http://blog.cssherry.com/post/107400388319/w4d2-html-views-in-the-rails-app).
+This was completed with [Dana](https://github.com/ladyd252). See my related blog post [here](http://blog.cssherry.com/post/107400388319/w4d2-html-views-in-the-rails-app).
 
 ### W4D2
 * HTML

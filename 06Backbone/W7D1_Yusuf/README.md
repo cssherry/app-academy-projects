@@ -1,11 +1,10 @@
 # App Academy Projects
 ====================
-This was partially completed with [Matthew](https://github.com/gekkey). See my related blog post [here](http://blog.cssherry.com/post/107322535944/w4d1-rails-routing-and-controllers).
+This was completed with [Yusuf](https://github.com/YusufSoomro). See my related blog post [here](http://blog.cssherry.com/post/109286331824/w7d1-pokemon-browser-backbone-style).
 
-### W4D1
-* Routing
-* Controllers
-* JSON API
+### W7D1
+* Backbone.Model
+* Backbone.Collection
 
 # How to Run These Files
 These files require Ruby to run. The best ruby tutorial I've found is this: [Ruby Installation Tutorial](http://installrails.com/steps).

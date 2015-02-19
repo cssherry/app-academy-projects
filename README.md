@@ -187,6 +187,36 @@ This repository contains a list of projects completed for App Academy.
 * jQuery VII: Triggering
 * Intro to jQuery Plugins
 
+### W6D5
+* jQuery Fundamentals: AJAX
+* Basic AJAX
+* AJAX Remote Forms
+* Underscore Templates
+
+## Week 7
+### W7D1
+* Backbone.Model
+* Backbone.Collection
+
+### W7D2
+* Backbone.View
+* Backbone.Router
+
+### W7D3
+* CollectionView pattern
+* Backbone.Event
+* Getting Started With Backbone
+
+### W7D4
+* Backbone parse
+
+### W7D5
+* RailsCast on Jbuilder
+* Composite View
+
+### W8D1
+* jQuery UI
+
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
 [01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka

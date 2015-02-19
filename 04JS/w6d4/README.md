@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Velina](https://github.com/vveleva).  See my related blog post [here](http://blog.cssherry.com/post/108903462934/w6d4-jquery-and-css).
+This was with [Velina](https://github.com/vveleva).  See my related blog post [here](http://blog.cssherry.com/post/108903462934/w6d4-jquery-and-css).
 
 ### W6D4
 * jQuery VI: Event Delegation

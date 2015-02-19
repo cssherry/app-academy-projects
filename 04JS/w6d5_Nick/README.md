@@ -1,8 +1,8 @@
 # App Academy Projects
 ====================
-This was partially completed with [Nick](https://github.com/nickarora).  See my related blog post [here](http://blog.cssherry.com/post/109192873849/w6d5-immediate-response-through-ajax).
+This was completed with [Nick](https://github.com/nickarora).  See my related blog post [here](http://blog.cssherry.com/post/109192873849/w6d5-immediate-response-through-ajax).
 
-### W6D4
+### W6D5
 * jQuery Fundamentals: AJAX
 * Basic AJAX
 * AJAX Remote Forms

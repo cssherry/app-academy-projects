@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Patrick](https://github.com/patapat).  See my related blog post [here](http://blog.cssherry.com/post/108247843094/w5d4-javascript).
+This was completed with [Patrick](https://github.com/patapat).  See my related blog post [here](http://blog.cssherry.com/post/108247843094/w5d4-javascript).
 
 ### W5D4
 * Codecademy JS Curriculum

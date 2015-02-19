@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Will](https://github.com/Will-Tian).  See my related blog post [here](http://blog.cssherry.com/post/108629309799/w6d1-javascript-asteroids).
+This was completed with [Will](https://github.com/Will-Tian).  See my related blog post [here](http://blog.cssherry.com/post/108629309799/w6d1-javascript-asteroids).
 
 ### W6D1
 * arguments

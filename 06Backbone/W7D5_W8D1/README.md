@@ -1,11 +1,13 @@
 # App Academy Projects
 ====================
-This was partially completed with [Matthew](https://github.com/gekkey). See my related blog post [here](http://blog.cssherry.com/post/107322535944/w4d1-rails-routing-and-controllers).
+This was a solo project. See my related blog post [here](http://blog.cssherry.com/post/109869087899/w7d5-trello-begin) and [here](http://blog.cssherry.com/post/109970001834/w8d1-finished-trello-and-reformatted-computer).
 
-### W4D1
-* Routing
-* Controllers
-* JSON API
+### W7D5
+* RailsCast on Jbuilder
+* Composite View
+
+### W8D1
+* jQuery UI
 
 # How to Run These Files
 These files require Ruby to run. The best ruby tutorial I've found is this: [Ruby Installation Tutorial](http://installrails.com/steps).

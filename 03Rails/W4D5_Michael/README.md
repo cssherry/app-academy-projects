@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Michael](https://github.com/mvassilevsky). See my related blog post [here](http://blog.cssherry.com/post/107880298644/w4d5-rails-app-authentication-and-shortcuts).
+This was completed with [Michael](https://github.com/mvassilevsky). See my related blog post [here](http://blog.cssherry.com/post/107880298644/w4d5-rails-app-authentication-and-shortcuts).
 
 ### W4D5
 * Polymorphic Associations
