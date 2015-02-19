@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed solo. See my related blog post [here]().
+This was completed solo. See my related blog post [here](http://blog.cssherry.com/post/106744508974/metaprogramming-from-rubymonk).
 
 ## Week 3
 ### W3D5

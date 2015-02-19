@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Ander](https://github.com/Catamarander). See my related blog post [here](http://cssherry.tumblr.com/post/104830470794/w1d2-methods-iterations-symbols-strings). 
+This was completed with [Ander](https://github.com/Catamarander). See my related blog post [here](http://blog.cssherry.com/post/104830470794/w1d2-methods-iterations-symbols-strings). 
 
 
 ## Week 1

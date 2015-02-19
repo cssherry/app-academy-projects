@@ -1,6 +1,6 @@
 # W1D1
 ====================
-This was completed with [Luke](https://github.com/lusketeer). See my related blog post [here](http://cssherry.tumblr.com/post/104746682869/w1d1-arrays-strings-hashes-enumerables). 
+This was completed with [Luke](https://github.com/lusketeer). See my related blog post [here](http://blog.cssherry.com/post/104746682869/w1d1-arrays-strings-hashes-enumerables). 
 
 ## Week 1
 ### w1d1

@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was partially completed with [Bryce](https://github.com/byoung1018), partially solo. See my related blog post [here]().
+This was partially completed with [Bryce](https://github.com/byoung1018), partially solo. See my related blog post [here](http://blog.cssherry.com/post/106694996074/w3d4-activerecord-advanced).
 
 ### W3D4
 * ActiveRecord::Relation

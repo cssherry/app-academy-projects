@@ -1,6 +1,6 @@
 # App Academy Projects
 ====================
-This was completed with [Varun](https://github.com/varunprabhakar14). See my related blog post [here](http://cssherry.tumblr.com/post/105755678599/w2d5-rspec-and-tdd).
+This was completed with [Varun](https://github.com/varunprabhakar14). See my related blog post [here](http://blog.cssherry.com/post/105755678599/w2d5-rspec-and-tdd).
 
 ## Week 2
 ### W2D5
