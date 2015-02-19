@@ -62,7 +62,7 @@ class Game
   def save_game
     puts 'Filename?'
     filename = gets.chomp.downcase
-    File.open("01Ruby/w2d2_Varun/saved_games/#{filename}.yml", 'w') { |f| f.puts self.to_yaml }
+    File.open("saved_games/#{filename}.yml", 'w') { |f| f.puts self.to_yaml }
     fail GameSaved
     rescue Errno::ENOENT => s
       puts "#{s}: Enter a legitimate filename"
@@ -86,7 +86,7 @@ if load == 'l'
   begin
     puts 'Filename?'
     filename = gets.chomp.downcase
-    file = YAML.load_file("01Ruby/w2d2_Varun/saved_games/#{filename}.yml")
+    file = YAML.load_file("saved_games/#{filename}.yml")
     file.play
   rescue Errno::ENOENT => e
     puts "#{e}: Wrong File Name"
