@@ -2,9 +2,10 @@
 ====================
 This was a solo project. See my related blog post [here](http://blog.cssherry.com/post/108063576009/w5d2-rails-lite) and [here](http://blog.cssherry.com/post/108159254529/w5d3-finishing-rails-lite).
 
-### W5D2 and D3
-* HTTP
-* Rebuilding Rails
+### W4D1
+* Routing
+* Controllers
+* JSON API
 
 # How to Run These Files
 These files require Ruby to run. The best ruby tutorial I've found is this: [Ruby Installation Tutorial](http://installrails.com/steps).

@@ -2,10 +2,9 @@
 ====================
 This was partially completed with [Matthew](https://github.com/gekkey). See my related blog post [here](http://blog.cssherry.com/post/107322535944/w4d1-rails-routing-and-controllers).
 
-### W4D1
-* Routing
-* Controllers
-* JSON API
+### W5D2 and D3
+* HTTP
+* Rebuilding Rails
 
 # How to Run These Files
 These files require Ruby to run. The best ruby tutorial I've found is this: [Ruby Installation Tutorial](http://installrails.com/steps).

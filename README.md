@@ -143,6 +143,14 @@ This repository contains a list of projects completed for App Academy.
 * HTTP
 * Rebuilding Rails
 
+### W5D4
+* Codecademy JS Curriculum
+* jQuery Fundamentals: JavaScript Basics
+* Server-side JavaScript
+* Object-oriented JavaScript
+* Function invocation
+* Closures and Scope
+
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
 [01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka
