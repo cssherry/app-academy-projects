@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css"> -->
+    <script src="./jquery-1.11.2.min.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <script>
+    $(function() {
+      $('.tabs').tabs();
+    })
+    </script>
+
+    <ul class="tabs" data-content-tabs="#content-tabs">
+      <li class="active"><a href='#chihuahua' >Chihuahua</a></li>
+      <li><a href='#golden-retriever'>Golden Retriever</a></li>
+      <li><a href='#corgi'>Corgi</a></li>
+    </ul>
+    <div id="content-tabs">
+      <div class="tab-pane active" id="chihuahua">
+        <p>
+          If you are looking for a true best friend, the Bullmastiff
+          might be for you. These large and powerful dogs make
+          excellent companions because they are so loyal and protective.
+          They will want to go with you everywhere, be part of everything
+          you do, and will not do well behaviorally if they do not get
+          the attention they crave.
+        </p>
+      </div>
+      <div class="tab-pane" id="golden-retriever">
+        <p>
+          The Black Russian Terrier is large, intelligent, robust,
+          powerful, protective, and territorial. He loves his family
+          deeply but is aloof and distrustful toward strangers. He is
+          a good watchdog, and doesn't usually bark unless there's a
+          reason. He is born with an instinct to guard and protect,
+          and he will protect your family, yard, house, and vehicle.
+        </p>
+      </div>
+      <div class="tab-pane" id="corgi">
+        <p>
+          Do you want to bring a gentle giant into your home?
+          I'm talking giant. He will be able to rest his head
+          on the dining room table. And if you look away, he will
+          steal the food off your plate! And did I mention that they
+          eat a lot of food! They are eating-machines. Irish Wolfhounds
+          are big sweethearts and will want (need) to be part of your
+          family. They are affectionate, not as cuddly as some other
+          breeds, but they still want to be with you. They do not do
+          well if left alone for hours on end. These are active dogs
+          who need daily exercise to be happy. They love to take long
+          walks, but be prepared to bring large plastic bags with you!
+          (To pick up his large messes).
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
