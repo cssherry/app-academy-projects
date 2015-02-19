@@ -1,0 +1,125 @@
+<script type="text/template" id="pokemon-list-item-template">
+  <!-- numbers automatically converted in JS, so put quotes here -->
+  <li class="poke-list-item" data-id="<%%= pokemon.id %>">
+    <%% ['name', 'poke_type'].forEach(function(attr)  { %>
+      <!-- could have used ul/li here to prevent breaks -->
+      <%%= attr %> : <%%= pokemon.escape(attr) %> <br>
+    <%% }); %>
+  </li>
+</script>
+
+<script type="text/template" id="pokemon-detail-template">
+  <div class="detail">
+    <img src="<%%= pokemon.escape('image_url') %>"></img>
+    <%% for (var attr in pokemon.attributes) { %>
+      <%% if (pokemon.get(attr) && attr !== 'id' && attr !== 'image_url') { %>
+        <!-- don't have in-line styling -->
+        <span><strong>  <%%=attr%>: </strong></span> <%%=pokemon.escape(attr) %> <br>
+      <%% } %>
+    <%% } %>
+    <span> <strong>Toys: </strong> </span><br>
+    <ul class="toys"></ul>
+  </div>
+</script>
+
+<script type="text/template" id="toy-list-item-template">
+  <li class="toy-list-item" data-id="<%%=toy.id%>" data-pokemon-id="<%%= toy.get('pokemon_id') %>">
+    <%% ['name', 'happiness', 'price'].forEach(function (attr) { %>
+      <%%= attr %>: <%%= toy.escape(attr) %> <br>
+    <%% }); %>
+  </li>
+</script>
+
+<script type="text/template" id="toy-detail-template">
+  <div class='detail'>
+    <img src="<%%= toy.escape('image_url') %>" alt="" /> <br>
+
+    <%% for (var attr in toy.attributes){ %>
+      <%% if(attr !== 'pokemon_id' && attr !== 'image_url') { %>
+        <span> <strong><%%= attr %>: </strong> </span> <%%= toy.escape(attr) %>
+        <br>
+      <%% } %>
+    <%% } %>
+
+
+    <select data-toy-id=<%%=toy.id%> data-pokemon-id=<%%= toy.get('pokemon_id') %>>
+      <%% pokes.each(function(pokemon) { %>
+        <%% var selected = pokemon.id == toy.get("pokemon_id") ? "selected" : "" %>
+        <option value=<%%= pokemon.id %> <%%= selected %>>
+          <%%= pokemon.escape("name") %>
+        </option>
+      <%% }) %>
+    </select>
+  </div>
+</script>
+
+<script type="text/template" id="pokemon-form-template">
+    <form class='new-pokemon'>
+      <%% if (pokemon.id)  {%>
+        <input type="hidden" name="pokemon[id]" value=<%%= pokemon.id %>>
+      <%% } %>
+      <div>
+        <label for='pokemon_name'>Name:</label>
+        <input type='text'
+               id='pokemon_name'
+               name='pokemon[name]'
+               value="<%%= pokemon.get("name") %>">
+      </div>
+
+      <div>
+        <label for='pokemon_image_url'>Image URL:</label>
+        <input type='text'
+               id='pokemon_image_url'
+               name='pokemon[image_url]'
+               value="<%%= pokemon.get("image_url") %>">
+      </div>
+
+      <div>
+        <input type="hidden" id="pokemon-types" data-types="<%= Pokemon::TYPES %>">
+        <label for='pokemon_poke_type'>Type:</label>
+        <select id='pokemon_poke_type'
+                name='pokemon[poke_type]'>
+          <%% var TYPES = ["fire","electric","normal","ghost","psychic","water","bug","dragon","grass","fighting","ice","flying","poison","ground","rock","steel"] %>
+          <%% TYPES.forEach(function(type){%>
+            <%% var selected = pokemon.get("poke_type") === type ? "selected" : "" %>
+            <option <%%= selected %>><%%= type %></option>
+          <%% }); %>
+      </select>
+    </div>
+
+    <div>
+      <label for='pokemon_attack'>Attack:</label>
+      <input type='number'
+             id='pokemon_attack'
+             name='pokemon[attack]'
+             value="<%%= pokemon.get("attack") %>">
+    </div>
+
+    <div>
+      <label for='pokemon_defense'>Defense:</label>
+      <input type='number'
+             id='pokemon_defense'
+             name='pokemon[defense]'
+             value="<%%= pokemon.get("defense") %>">
+    </div>
+
+    <div>
+      <label for='pokemon_move_1'>Move #1:</label>
+      <input type='text'
+             id='pokemon_move_1'
+             name='pokemon[moves][]'
+             value="<%%= pokemon.get("moves")[0] %>">
+    </div>
+
+    <div>
+      <label for='pokemon_move_2'>Move #2:</label>
+      <input type='text'
+             id='pokemon_move_2'
+             name='pokemon[moves][]'
+             value="<%%= pokemon.get("moves")[1] %>">
+    </div>
+
+    <button>Save Pokemon</button>
+    <br>
+  </form>
+</script>
