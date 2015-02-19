@@ -99,6 +99,50 @@ This repository contains a list of projects completed for App Academy.
 * subject and let
 * guard-rspec
 
+## Week 4
+### W4D1
+* Routing
+* Controllers
+* JSON API
+
+### W4D2
+* HTML
+* Views
+* ERB
+* HTML Form Basics
+* Rails Parameter Conventions
+* Mass Assignment
+* PATCH, PUT, and DELETE
+* Debugging
+
+### W4D3
+* Cookies
+* Controllers and State
+* CSRF and Forms
+* displaying validation errors, flash
+* Authentication: Creating Users and Sessions
+
+### W4D4
+* ActionMailer
+* View helpers
+* View layouts
+* View partials
+
+### W4D5
+* Polymorphic Associations
+* Concerns
+
+## Week 5
+### W5D1
+* RSpec and Rails Setup
+* Testing Models
+* FactoryGirl and Faker Gems
+* Integration Testing with Capybar
+
+### W5D2 and D3
+* HTTP
+* Rebuilding Rails
+
 [01Ruby/W1D1_Luke]: ./01Ruby/W1D1_Luke
 [01Ruby/W1D2_Ander]: ./01Ruby/W1D2_Ander
 [01Ruby/W1D3_Ashoka]: ./01Ruby/W1D3_Ashoka
@@ -116,4 +160,3 @@ This repository contains a list of projects completed for App Academy.
 [02SQL/W3D2]: ./02SQL/W3D2
 [02SQL/W3D4]: ./02SQL/W3D4
 [02SQL/W3D5]: ./02SQL/W3D5
-
