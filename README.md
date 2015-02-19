@@ -251,7 +251,7 @@ This repository contains a list of projects completed for App Academy.
 [W6D2]: ./05CSS/W6D2_Jasper
 [W6D3]: ./04JS/W6D3_Mike
 [W6D4]: ./04JS/W6D4
-[W6D5]: ./04JS/w6d5_Nick
+[W6D5]: ./04JS/W6D5_Nick
 [w5_a05]: ./04JS/W5_a05-practice
 [W7D1]: ./06Backbone/W7D1_Yusuf
 [W7D2]: ./06Backbone/W7D2_Aaron
