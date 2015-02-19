@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 10px auto;
+  text-align: center;
+  color: mediumorchid;
+  font-size: 44px;
+}
+
+body{
+  width: 600px;
+  margin: auto;
+}
+
+figure {
+    display: block;
+    margin: auto;
+}
+.hanoi {
+  width: 600px;
+  height: 200px;
+  border: 5px solid black;
+}
+
+.hanoi [tower] {
+  float: left;
+  width: 33.3%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.hanoi [disc-size]{
+  border: 1px solid black;
+  height: 33.3%;
+  border-radius: 12px;
+  margin: auto;
+  opacity: 0.75;
+  background-color: darkorchid ;
+}
+
+.hanoi [disc-size="0"] {
+  width: 33.3%;
+}
+.hanoi [disc-size="1"] {
+  width: 66.6%;
+}
+.hanoi [disc-size="2"] {
+  width: 100%;
+}
+
+[tower] :not([disk-size]) {
+  height: 33.3%;
+}
+
+[tower]:hover {
+  background-color: #B6DDDD;
+  cursor: pointer;
+}
+
+[disc-size].fromTower {
+  opacity: 1;
+}
+
+#play {
+  display: none;
+}
+
+#play.display {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+p {
+  width: 100%;
+  text-align: center;
+  color: #FF70DB;
+  font-size: 40px;
+  margin-top: 10px;
+}

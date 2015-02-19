@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/hanoi.css">
+
+    <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../../hanoi-core-solution/hanoi-core.js"></script>
+    <script type="text/javascript" src="../js/hanoi-view.js"></script>
+  </head>
+
+  <body>
+    <h1>Hanoi</h1>
+    <figure class="hanoi"></figure>
+    <button name="yes" type="submit" id="play">Play Again!</button>
+
+    <script>
+      $(function () {
+        var game = new Hanoi.Game()
+        var view = new Hanoi.View(game, $(".hanoi"));
+        view.clickTower();
+      });
+    </script>
+ </body>
+</html>
