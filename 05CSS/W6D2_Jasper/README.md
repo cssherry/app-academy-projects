@@ -10,6 +10,4 @@ This was partially completed with [Jasper](https://github.com/j4sper).  See my r
 * Positioning and Floating
 
 # How to Run These Files
-Just open [friends.html](friends)
-
-[friends]: ./css-friends-gh-pages/skeleton/friends.html
+Just open [friends.html](./css-friends-gh-pages/skeleton/friends.html)
