@@ -45,8 +45,10 @@ This repository contains a list of projects completed for App Academy.
 * Decomposition into objects
 * Inheritance, Polymorphism and DRY
 * Information hiding/encapsulation
+
 ### [W2D4][01Ruby/W2D4]
 * Checkers
+
 ### [W2D5][01Ruby/W2D5_Wahab]
 * Introduction to RSpec
 * RSpec Syntax
